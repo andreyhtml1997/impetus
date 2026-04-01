@@ -23,7 +23,64 @@ function impetus_sp_get_lang_from_request()
 		return 'ru';
 	}
 
+	if (strpos($path, '/en/') === 0 || $path === '/en') {
+		return 'en';
+	}
+
 	return 'ua';
+}
+
+function impetus_sp_resolve_lang_code($lang_short)
+{
+	$lang_short = mb_strtolower(trim((string) $lang_short), 'UTF-8');
+
+	if (!$lang_short) {
+		$lang_short = 'ua';
+	}
+
+	if (function_exists('impetus_trp_resolve_lang_code')) {
+		$resolved = impetus_trp_resolve_lang_code($lang_short);
+		if (!empty($resolved) && is_string($resolved)) {
+			return $resolved;
+		}
+	}
+
+	if ($lang_short === 'ru') {
+		return 'ru_RU';
+	}
+
+	if ($lang_short === 'en') {
+		return 'en_GB';
+	}
+
+	return 'uk';
+}
+
+function impetus_sp_translate_for_lang($value, $lang_short)
+{
+	$value = (string) $value;
+
+	if ($value === '') {
+		return '';
+	}
+
+	$lang_code = impetus_sp_resolve_lang_code($lang_short);
+
+	if (function_exists('impetus_trp_translate_value')) {
+		$translated = impetus_trp_translate_value($value, $lang_code);
+		if (is_string($translated) && $translated !== '') {
+			return $translated;
+		}
+	}
+
+	if (function_exists('trp_translate')) {
+		$translated = trp_translate($value, $lang_code, false);
+		if (is_string($translated) && $translated !== '') {
+			return $translated;
+		}
+	}
+
+	return $value;
 }
 
 function impetus_sp_clean_text($text)
@@ -153,6 +210,7 @@ function impetus_sp_get_group_field_text($group_id, $field_name)
 function impetus_sp_get_product_data($post_id)
 {
 	$post_id = (int) $post_id;
+	$lang = impetus_sp_get_lang_from_request();
 
 	$title = impetus_sp_clean_text(get_the_title($post_id));
 	$brand = impetus_sp_get_term_name(get_field('product_brand', $post_id), 'brand');
@@ -165,6 +223,25 @@ function impetus_sp_get_product_data($post_id)
 	$product_group = (int) get_field('product_group', $post_id);
 	$product_description = impetus_sp_get_group_field_text($product_group, 'product_description');
 	$product_composition = impetus_sp_get_group_field_text($product_group, 'product_composition');
+
+	$title = impetus_sp_translate_for_lang($title, $lang);
+	$brand = impetus_sp_translate_for_lang($brand, $lang);
+	$color = impetus_sp_translate_for_lang($color, $lang);
+	$country = impetus_sp_translate_for_lang($country, $lang);
+	$product_description = impetus_sp_translate_for_lang($product_description, $lang);
+	$product_composition = impetus_sp_translate_for_lang($product_composition, $lang);
+
+	$translated_materials = array();
+	if (!empty($material_names) && is_array($material_names)) {
+		foreach ($material_names as $material_name) {
+			$translated_material = impetus_sp_translate_for_lang($material_name, $lang);
+			if ($translated_material !== '') {
+				$translated_materials[] = $translated_material;
+			}
+		}
+	}
+
+	$materials = $translated_materials ? implode(', ', $translated_materials) : '';
 
 	return array(
 		'title' => $title,
@@ -203,6 +280,10 @@ function impetus_sp_get_yoast_meta($post_id)
 		$title = impetus_sp_expand_wpseo_vars($title, $post);
 		$desc = impetus_sp_expand_wpseo_vars($desc, $post);
 
+		$lang = impetus_sp_get_lang_from_request();
+		$title = impetus_sp_translate_for_lang($title, $lang);
+		$desc = impetus_sp_translate_for_lang($desc, $lang);
+
 		if ($title) {
 			$out['title'] = $title;
 		}
@@ -213,6 +294,29 @@ function impetus_sp_get_yoast_meta($post_id)
 	}
 
 	return $out;
+}
+
+function impetus_sp_get_acf_lang_meta($post_id, $lang)
+{
+	$post_id = (int) $post_id;
+	$lang = mb_strtolower(trim((string) $lang), 'UTF-8');
+
+	if (!$post_id) {
+		return array('title' => '', 'desc' => '');
+	}
+
+	$title = '';
+	$desc = '';
+
+	if (function_exists('get_field')) {
+		$title = (string) get_field('meta_title_' . $lang, $post_id);
+		$desc = (string) get_field('meta_description_' . $lang, $post_id);
+	}
+
+	return array(
+		'title' => impetus_sp_clean_text($title),
+		'desc' => impetus_sp_clean_text($desc),
+	);
 }
 
 function impetus_sp_build_auto_meta($post_id)
@@ -295,12 +399,21 @@ function impetus_sp_build_auto_meta($post_id)
 
 function impetus_sp_get_final_meta($post_id)
 {
+	$lang = impetus_sp_get_lang_from_request();
+	$acf = impetus_sp_get_acf_lang_meta($post_id, $lang);
 	$yoast = impetus_sp_get_yoast_meta($post_id);
 	$auto = impetus_sp_build_auto_meta($post_id);
 
+	if ($lang !== 'ua') {
+		return array(
+			'title' => !empty($acf['title']) ? $acf['title'] : (!empty($auto['title']) ? $auto['title'] : $yoast['title']),
+			'desc' => !empty($acf['desc']) ? $acf['desc'] : (!empty($auto['desc']) ? $auto['desc'] : $yoast['desc']),
+		);
+	}
+
 	return array(
-		'title' => !empty($yoast['title']) ? $yoast['title'] : $auto['title'],
-		'desc' => !empty($yoast['desc']) ? $yoast['desc'] : $auto['desc'],
+		'title' => !empty($acf['title']) ? $acf['title'] : (!empty($yoast['title']) ? $yoast['title'] : $auto['title']),
+		'desc' => !empty($acf['desc']) ? $acf['desc'] : (!empty($yoast['desc']) ? $yoast['desc'] : $auto['desc']),
 	);
 }
 

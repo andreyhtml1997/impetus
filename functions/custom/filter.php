@@ -1166,6 +1166,62 @@ function impetus_catalog_normalize_seo_key($key)
   return user_trailingslashit($key);
 }
 
+function impetus_catalog_strip_lang_prefix($key)
+{
+  $key = impetus_catalog_normalize_seo_key($key);
+  if (!$key) {
+    return '';
+  }
+
+  $stripped = preg_replace('~^/(ru|en|uk)(?=/|$)~i', '', $key, 1);
+  if (!$stripped) {
+    $stripped = '/';
+  }
+
+  return user_trailingslashit('/' . ltrim($stripped, '/'));
+}
+
+function impetus_catalog_seo_key_candidates($seo_key)
+{
+  $normalized = impetus_catalog_normalize_seo_key($seo_key);
+  if (!$normalized) {
+    return array();
+  }
+
+  $base = impetus_catalog_strip_lang_prefix($normalized);
+
+  $paths = array($normalized);
+  if ($base) {
+    $paths[] = $base;
+    foreach (array('ru', 'en', 'uk') as $lang_prefix) {
+      $paths[] = '/' . $lang_prefix . '/' . ltrim($base, '/');
+    }
+  }
+
+  $out = array();
+  foreach ($paths as $p) {
+    $p = impetus_catalog_normalize_seo_key($p);
+    if (!$p) {
+      continue;
+    }
+
+    $variants = array(
+      $p,
+      untrailingslashit($p),
+      ltrim($p, '/'),
+      ltrim(untrailingslashit($p), '/'),
+    );
+
+    foreach ($variants as $v) {
+      if ($v !== '' && !in_array($v, $out, true)) {
+        $out[] = $v;
+      }
+    }
+  }
+
+  return $out;
+}
+
 function impetus_catalog_seo_key()
 {
   $path = isset($_SERVER['REQUEST_URI']) ? (string) $_SERVER['REQUEST_URI'] : '';
@@ -1184,40 +1240,31 @@ function impetus_catalog_get_seo_override_post_id($seo_key)
   if (isset($cache[$k]))
     return (int) $cache[$k];
 
+  $key_candidates = impetus_catalog_seo_key_candidates($k);
+  if (empty($key_candidates)) {
+    $cache[$k] = 0;
+    return 0;
+  }
+
   // ⚠️ если у тебя другой post_type — поменяй тут.
   $post_type = 'seo_catalog';
 
-  $k2 = untrailingslashit($k);
-
   // 1) быстрый точный поиск
+  $meta_query = array('relation' => 'OR');
+  foreach ($key_candidates as $candidate) {
+    $meta_query[] = array(
+      'key' => 'seo_key',
+      'value' => $candidate,
+      'compare' => '='
+    );
+  }
+
   $q = new WP_Query(array(
     'post_type' => $post_type,
     'post_status' => 'publish',
     'posts_per_page' => 1,
     'fields' => 'ids',
-    'meta_query' => array(
-      'relation' => 'OR',
-      array(
-        'key' => 'seo_key',
-        'value' => $k,
-        'compare' => '='
-      ),
-      array(
-        'key' => 'seo_key',
-        'value' => $k2,
-        'compare' => '='
-      ),
-      array(
-        'key' => 'seo_key',
-        'value' => ltrim($k, '/'),
-        'compare' => '='
-      ),
-      array(
-        'key' => 'seo_key',
-        'value' => ltrim($k2, '/'),
-        'compare' => '='
-      ),
-    ),
+    'meta_query' => $meta_query,
   ));
 
   $id = 0;
@@ -1236,8 +1283,8 @@ function impetus_catalog_get_seo_override_post_id($seo_key)
 
     foreach ($ids as $pid) {
       $val = get_post_meta((int) $pid, 'seo_key', true);
-      $valn = impetus_catalog_normalize_seo_key($val);
-      if ($valn === $k) {
+      $val_candidates = impetus_catalog_seo_key_candidates($val);
+      if (!empty(array_intersect($key_candidates, $val_candidates))) {
         $id = (int) $pid;
         break;
       }
