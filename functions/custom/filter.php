@@ -198,6 +198,50 @@ function frontend_exist_catalog()
     _wp_redirect(home_url());
 }
 
+add_action('template_redirect', 'impetus_redirect_en_prefix_to_default', 0);
+function impetus_redirect_en_prefix_to_default()
+{
+  if (is_admin() || wp_doing_ajax()) {
+    return;
+  }
+
+  $uri = isset($_SERVER['REQUEST_URI']) ? (string) $_SERVER['REQUEST_URI'] : '';
+  if (!$uri) {
+    return;
+  }
+
+  $path = parse_url($uri, PHP_URL_PATH);
+  if (!$path) {
+    return;
+  }
+
+  $path = '/' . ltrim($path, '/');
+  if (!preg_match('~^/en(?=/|$)~i', $path)) {
+    return;
+  }
+
+  $new_path = preg_replace('~^/en(?=/|$)~i', '', $path, 1);
+  $new_path = '/' . ltrim((string) $new_path, '/');
+  if ($new_path === '//') {
+    $new_path = '/';
+  }
+
+  $host = isset($_SERVER['HTTP_HOST']) ? trim((string) $_SERVER['HTTP_HOST']) : '';
+  if ($host === '') {
+    $host = (string) parse_url(home_url('/'), PHP_URL_HOST);
+  }
+
+  $scheme = is_ssl() ? 'https' : 'http';
+  $target = $scheme . '://' . $host . $new_path;
+  $query = parse_url($uri, PHP_URL_QUERY);
+  if (!empty($query)) {
+    $target .= '?' . $query;
+  }
+
+  wp_redirect($target, 301);
+  exit;
+}
+
 add_action('template_redirect', 'impetus_block_seo_catalog_urls', 0);
 function impetus_block_seo_catalog_urls()
 {

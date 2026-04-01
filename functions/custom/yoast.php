@@ -642,6 +642,63 @@ add_filter('get_canonical_url', function ($canonical, $post) {
   return $canonical;
 }, 999, 2);
 
+// TranslatePress outputs hreflang in wp_head. For dynamic catalog URLs we output custom links
+// to ensure exact counterparts: uk, ru and x-default (without en and without ru-RU).
+add_filter('trp-exclude-hreflang', function ($exclude, $original_url) {
+  if (function_exists('mw_catalog_is_catalog_request') && mw_catalog_is_catalog_request()) {
+    return true;
+  }
+
+  return $exclude;
+}, 20, 2);
+
+function impetus_catalog_hreflang_urls()
+{
+  $uri = isset($_SERVER['REQUEST_URI']) ? (string) $_SERVER['REQUEST_URI'] : '';
+  $path = $uri ? parse_url($uri, PHP_URL_PATH) : '';
+
+  if (!$path) {
+    return array();
+  }
+
+  $path = '/' . ltrim($path, '/');
+  $uk_path = preg_replace('~^/(ru|en|uk)(?=/|$)~i', '', $path, 1);
+  $uk_path = '/' . ltrim((string) $uk_path, '/');
+  $uk_path = user_trailingslashit($uk_path);
+
+  $ru_path = '/ru' . ($uk_path === '/' ? '/' : $uk_path);
+  $home = trim((string) get_option('home'));
+  if (!$home) {
+    $home = home_url('/');
+  }
+  $home = untrailingslashit($home);
+
+  return array(
+    'uk' => $home . $uk_path,
+    'ru' => $home . $ru_path,
+    'x-default' => $home . $uk_path,
+  );
+}
+
+add_action('wp_head', function () {
+  if (is_admin()) {
+    return;
+  }
+
+  if (!function_exists('mw_catalog_is_catalog_request') || !mw_catalog_is_catalog_request()) {
+    return;
+  }
+
+  $urls = impetus_catalog_hreflang_urls();
+  if (empty($urls['uk']) || empty($urls['ru']) || empty($urls['x-default'])) {
+    return;
+  }
+
+  echo "\n" . '<link rel="alternate" hreflang="uk" href="' . esc_url($urls['uk']) . '"/>' . "\n";
+  echo '<link rel="alternate" hreflang="ru" href="' . esc_url($urls['ru']) . '"/>' . "\n";
+  echo '<link rel="alternate" hreflang="x-default" href="' . esc_url($urls['x-default']) . '"/>' . "\n";
+}, 20);
+
 
 add_filter('wpseo_title', function ($title) {
   $ctx = function_exists('impetus_catalog_get_static_filter_context') ? impetus_catalog_get_static_filter_context() : array();
