@@ -1,0 +1,229 @@
+﻿{
+    "key":  "group_6840b49dc7b5e",
+    "title":  "Р”РѕРґР°С‚РєРѕРІС– РїРѕР»СЏ РґР»СЏ РіСЂСѓРї С‚РѕРІР°СЂС–РІ",
+    "fields":  [
+                   {
+                       "key":  "field_6840b49dffefa",
+                       "label":  "РћРїРёСЃ",
+                       "name":  "product_description",
+                       "aria-label":  "",
+                       "type":  "wysiwyg",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "tabs":  "all",
+                       "toolbar":  "full",
+                       "media_upload":  1,
+                       "delay":  0
+                   },
+                   {
+                       "key":  "field_6840b50affefb",
+                       "label":  "РђСѓРґРёС‚РѕСЂС–СЏ",
+                       "name":  "product_audience_category",
+                       "aria-label":  "",
+                       "type":  "taxonomy",
+                       "instructions":  "",
+                       "required":  1,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "taxonomy":  "audience_category",
+                       "add_term":  0,
+                       "save_terms":  0,
+                       "load_terms":  0,
+                       "return_format":  "object",
+                       "field_type":  "select",
+                       "allow_null":  0,
+                       "bidirectional":  0,
+                       "multiple":  0,
+                       "bidirectional_target":  [
+
+                                                ]
+                   },
+                   {
+                       "key":  "field_6840b6df2caaf",
+                       "label":  "Р‘СЂРµРЅРґ",
+                       "name":  "product_brand",
+                       "aria-label":  "",
+                       "type":  "taxonomy",
+                       "instructions":  "",
+                       "required":  1,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "taxonomy":  "brand",
+                       "add_term":  0,
+                       "save_terms":  0,
+                       "load_terms":  0,
+                       "return_format":  "object",
+                       "field_type":  "select",
+                       "allow_null":  0,
+                       "bidirectional":  0,
+                       "multiple":  0,
+                       "bidirectional_target":  [
+
+                                                ]
+                   },
+                   {
+                       "key":  "field_6840b7472cab0",
+                       "label":  "РљР°С‚РµРіРѕСЂС–СЏ",
+                       "name":  "product_product_category",
+                       "aria-label":  "",
+                       "type":  "taxonomy",
+                       "instructions":  "Р’Р°Р¶Р»РёРІРѕ! РЎРїРѕС‡Р°С‚РєСѓ РЅРµРѕР±С…С–РґРЅРѕ РѕР±РёСЂР°С‚Рё Р±Р°С‚СЊРєС–РІСЃСЊРєСѓ РєР°С‚РµРіРѕСЂС–СЋ, Р° РїРѕС‚С–Рј РґРѕС‡С–СЂРЅСЋ, СЏРєС‰Рѕ С‚Р°РєР° С”.",
+                       "required":  1,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "taxonomy":  "product_category",
+                       "add_term":  0,
+                       "save_terms":  0,
+                       "load_terms":  0,
+                       "return_format":  "object",
+                       "field_type":  "multi_select",
+                       "allow_null":  0,
+                       "bidirectional":  0,
+                       "multiple":  0,
+                       "bidirectional_target":  [
+
+                                                ]
+                   },
+                   {
+                       "key":  "field_6840b7c6e655b",
+                       "label":  "РњР°С‚РµСЂС–Р°Р»",
+                       "name":  "product_material",
+                       "aria-label":  "",
+                       "type":  "taxonomy",
+                       "instructions":  "",
+                       "required":  1,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "taxonomy":  "material",
+                       "add_term":  0,
+                       "save_terms":  0,
+                       "load_terms":  0,
+                       "return_format":  "object",
+                       "field_type":  "multi_select",
+                       "allow_null":  0,
+                       "bidirectional":  0,
+                       "multiple":  0,
+                       "bidirectional_target":  [
+
+                                                ]
+                   },
+                   {
+                       "key":  "field_6840b7fce655c",
+                       "label":  "РљСЂР°С—РЅР°-РІРёСЂРѕР±РЅРёРє",
+                       "name":  "product_country",
+                       "aria-label":  "",
+                       "type":  "taxonomy",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "taxonomy":  "country",
+                       "add_term":  0,
+                       "save_terms":  0,
+                       "load_terms":  0,
+                       "return_format":  "object",
+                       "field_type":  "select",
+                       "allow_null":  0,
+                       "bidirectional":  0,
+                       "multiple":  0,
+                       "bidirectional_target":  [
+
+                                                ]
+                   },
+                   {
+                       "key":  "field_6840b870e655d",
+                       "label":  "РЎРєР»Р°Рґ",
+                       "name":  "product_composition",
+                       "aria-label":  "",
+                       "type":  "wysiwyg",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "tabs":  "all",
+                       "toolbar":  "full",
+                       "media_upload":  1,
+                       "delay":  0
+                   },
+                   {
+                       "key":  "field_68a773189e991",
+                       "label":  "Р РѕР·РјС–СЂРЅР° С‚Р°Р±Р»РёС†СЏ",
+                       "name":  "size_table",
+                       "aria-label":  "",
+                       "type":  "post_object",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "post_type":  [
+                                         "size_table"
+                                     ],
+                       "post_status":  [
+                                           "publish"
+                                       ],
+                       "taxonomy":  "",
+                       "return_format":  "object",
+                       "multiple":  0,
+                       "allow_null":  0,
+                       "bidirectional":  0,
+                       "ui":  1,
+                       "bidirectional_target":  [
+
+                                                ]
+                   }
+               ],
+    "location":  [
+                     [
+                         {
+                             "param":  "taxonomy",
+                             "operator":  "==",
+                             "value":  "product_group"
+                         }
+                     ]
+                 ],
+    "menu_order":  0,
+    "position":  "normal",
+    "style":  "default",
+    "label_placement":  "top",
+    "instruction_placement":  "label",
+    "hide_on_screen":  "",
+    "active":  true,
+    "description":  "Р”РѕРґР°С‚РєРѕРІС– РїРѕР»СЏ РґР»СЏ РіСЂСѓРї С‚РѕРІР°СЂС–РІ",
+    "show_in_rest":  0
+}

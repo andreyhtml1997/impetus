@@ -1,0 +1,255 @@
+﻿{
+    "key":  "group_6997e59b8b0ba",
+    "title":  "РћРїРёСЃ РєР°С‚РµРіРѕСЂС–Р№",
+    "fields":  [
+                   {
+                       "key":  "field_6997e59b8f7c0",
+                       "label":  "Р§РѕР»РѕРІС–РєРё",
+                       "name":  "",
+                       "aria-label":  "",
+                       "type":  "tab",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "placement":  "top",
+                       "endpoint":  0
+                   },
+                   {
+                       "key":  "field_6997e59b8f895",
+                       "label":  "РћРїРёСЃ (UA)",
+                       "name":  "men_description_ua",
+                       "aria-label":  "",
+                       "type":  "wysiwyg",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "tabs":  "all",
+                       "toolbar":  "full",
+                       "media_upload":  1,
+                       "delay":  0
+                   },
+                   {
+                       "key":  "field_6997e59b8f8ca",
+                       "label":  "РћРїРёСЃ (RU)",
+                       "name":  "men_description_ru",
+                       "aria-label":  "",
+                       "type":  "wysiwyg",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "tabs":  "all",
+                       "toolbar":  "full",
+                       "media_upload":  1,
+                       "delay":  0
+                   },
+                   {
+                       "key":  "field_6997e59b8f8ff",
+                       "label":  "РћРїРёСЃ (EN)",
+                       "name":  "men_description_en",
+                       "aria-label":  "",
+                       "type":  "wysiwyg",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "tabs":  "all",
+                       "toolbar":  "full",
+                       "media_upload":  1,
+                       "delay":  0
+                   },
+                   {
+                       "key":  "field_6997e59b8f90f",
+                       "label":  "Р–С–РЅРєРё",
+                       "name":  "",
+                       "aria-label":  "",
+                       "type":  "tab",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "placement":  "top",
+                       "endpoint":  0
+                   },
+                   {
+                       "key":  "field_6997e59b8f9e6",
+                       "label":  "РћРїРёСЃ (UA)",
+                       "name":  "women_description_ua",
+                       "aria-label":  "",
+                       "type":  "wysiwyg",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "tabs":  "all",
+                       "toolbar":  "full",
+                       "media_upload":  1,
+                       "delay":  0
+                   },
+                   {
+                       "key":  "field_6997e59b8fa1d",
+                       "label":  "РћРїРёСЃ (RU)",
+                       "name":  "women_description_ru",
+                       "aria-label":  "",
+                       "type":  "wysiwyg",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "tabs":  "all",
+                       "toolbar":  "full",
+                       "media_upload":  1,
+                       "delay":  0
+                   },
+                   {
+                       "key":  "field_6997e59b8fa54",
+                       "label":  "РћРїРёСЃ (EN)",
+                       "name":  "women_description_en",
+                       "aria-label":  "",
+                       "type":  "wysiwyg",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "tabs":  "all",
+                       "toolbar":  "full",
+                       "media_upload":  1,
+                       "delay":  0
+                   },
+                   {
+                       "key":  "field_6997e59b8fa90",
+                       "label":  "Р”С–С‚Рё",
+                       "name":  "",
+                       "aria-label":  "",
+                       "type":  "tab",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "placement":  "top",
+                       "endpoint":  0
+                   },
+                   {
+                       "key":  "field_6997e59b8fb70",
+                       "label":  "РћРїРёСЃ (UA)",
+                       "name":  "children_description_ua",
+                       "aria-label":  "",
+                       "type":  "wysiwyg",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "tabs":  "all",
+                       "toolbar":  "full",
+                       "media_upload":  1,
+                       "delay":  0
+                   },
+                   {
+                       "key":  "field_6997e59b8fba6",
+                       "label":  "РћРїРёСЃ (RU)",
+                       "name":  "children_description_ru",
+                       "aria-label":  "",
+                       "type":  "wysiwyg",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "tabs":  "all",
+                       "toolbar":  "full",
+                       "media_upload":  1,
+                       "delay":  0
+                   },
+                   {
+                       "key":  "field_6997e59b8fbdb",
+                       "label":  "РћРїРёСЃ (EN)",
+                       "name":  "children_description_en",
+                       "aria-label":  "",
+                       "type":  "wysiwyg",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "tabs":  "all",
+                       "toolbar":  "full",
+                       "media_upload":  1,
+                       "delay":  0
+                   }
+               ],
+    "location":  [
+                     [
+                         {
+                             "param":  "taxonomy",
+                             "operator":  "==",
+                             "value":  "product_category"
+                         }
+                     ]
+                 ],
+    "menu_order":  0,
+    "position":  "normal",
+    "style":  "default",
+    "label_placement":  "top",
+    "instruction_placement":  "label",
+    "hide_on_screen":  "",
+    "active":  true,
+    "description":  "Р”РѕРґР°С‚РєРѕРІС– РїРѕР»СЏ РґР»СЏ РєР°С‚РµРіРѕСЂС–Р№",
+    "show_in_rest":  0
+}

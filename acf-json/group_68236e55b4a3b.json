@@ -1,0 +1,404 @@
+﻿{
+    "key":  "group_68236e55b4a3b",
+    "title":  "Р“РѕР»РѕРІРЅР°",
+    "fields":  [
+                   {
+                       "key":  "field_68236e5557afb",
+                       "label":  "Р’С–РґРµРѕР±Р°РЅРµСЂ",
+                       "name":  "",
+                       "aria-label":  "",
+                       "type":  "tab",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "placement":  "top",
+                       "endpoint":  0
+                   },
+                   {
+                       "key":  "field_68236e7657afc",
+                       "label":  "Р’С–РґРµРѕ",
+                       "name":  "main-hero-video",
+                       "aria-label":  "",
+                       "type":  "file",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "return_format":  "url",
+                       "library":  "all",
+                       "min_size":  "",
+                       "max_size":  "",
+                       "mime_types":  ""
+                   },
+                   {
+                       "key":  "field_68236e7f57afd",
+                       "label":  "Р—Р°РіРѕР»РѕРІРѕРє",
+                       "name":  "main-hero-zagolovok",
+                       "aria-label":  "",
+                       "type":  "text",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "maxlength":  "",
+                       "placeholder":  "",
+                       "prepend":  "",
+                       "append":  ""
+                   },
+                   {
+                       "key":  "field_68236e8557afe",
+                       "label":  "РџС–РґР·Р°РіРѕР»РѕРІРѕРє",
+                       "name":  "main-hero-pidzagolovok",
+                       "aria-label":  "",
+                       "type":  "text",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "maxlength":  "",
+                       "placeholder":  "",
+                       "prepend":  "",
+                       "append":  ""
+                   },
+                   {
+                       "key":  "field_68237108a13e8",
+                       "label":  "РљР°С‚Р°Р»РѕРі",
+                       "name":  "",
+                       "aria-label":  "",
+                       "type":  "tab",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "placement":  "top",
+                       "endpoint":  0
+                   },
+                   {
+                       "key":  "field_68237111a13e9",
+                       "label":  "РљР°С‚Р°Р»РѕРі",
+                       "name":  "main_audience_categories",
+                       "aria-label":  "",
+                       "type":  "repeater",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "layout":  "block",
+                       "pagination":  0,
+                       "min":  0,
+                       "max":  2,
+                       "collapsed":  "",
+                       "button_label":  "Р”РѕРґР°С‚Рё СЂСЏРґРѕРє",
+                       "rows_per_page":  20,
+                       "sub_fields":  [
+                                          {
+                                              "key":  "field_682f2237f2546",
+                                              "label":  "РђСѓРґРёС‚РѕСЂС–СЏ",
+                                              "name":  "audience_category",
+                                              "aria-label":  "",
+                                              "type":  "taxonomy",
+                                              "instructions":  "",
+                                              "required":  0,
+                                              "conditional_logic":  0,
+                                              "wrapper":  {
+                                                              "width":  "",
+                                                              "class":  "",
+                                                              "id":  ""
+                                                          },
+                                              "taxonomy":  "audience_category",
+                                              "add_term":  0,
+                                              "save_terms":  0,
+                                              "load_terms":  0,
+                                              "return_format":  "object",
+                                              "field_type":  "select",
+                                              "allow_null":  0,
+                                              "bidirectional":  0,
+                                              "multiple":  0,
+                                              "bidirectional_target":  [
+
+                                                                       ],
+                                              "parent_repeater":  "field_68237111a13e9"
+                                          },
+                                          {
+                                              "key":  "field_68237119a13ea",
+                                              "label":  "Р’С–РґРµРѕ",
+                                              "name":  "video",
+                                              "aria-label":  "",
+                                              "type":  "file",
+                                              "instructions":  "",
+                                              "required":  0,
+                                              "conditional_logic":  0,
+                                              "wrapper":  {
+                                                              "width":  "",
+                                                              "class":  "",
+                                                              "id":  ""
+                                                          },
+                                              "return_format":  "url",
+                                              "library":  "all",
+                                              "min_size":  "",
+                                              "max_size":  "",
+                                              "mime_types":  "",
+                                              "parent_repeater":  "field_68237111a13e9"
+                                          }
+                                      ]
+                   },
+                   {
+                       "key":  "field_682371564c72d",
+                       "label":  "РџРѕРїСѓР»СЏСЂРЅС– РєР°С‚РµРіРѕСЂС–С—",
+                       "name":  "",
+                       "aria-label":  "",
+                       "type":  "tab",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "placement":  "top",
+                       "endpoint":  0
+                   },
+                   {
+                       "key":  "field_682f3825415cf",
+                       "label":  "РљР°С‚РµРіРѕСЂС–С—",
+                       "name":  "main_popular_product_categories",
+                       "aria-label":  "",
+                       "type":  "taxonomy",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "taxonomy":  "product_category",
+                       "add_term":  0,
+                       "save_terms":  0,
+                       "load_terms":  0,
+                       "return_format":  "object",
+                       "field_type":  "multi_select",
+                       "allow_null":  0,
+                       "bidirectional":  0,
+                       "multiple":  0,
+                       "bidirectional_target":  [
+
+                                                ]
+                   },
+                   {
+                       "key":  "field_682372b1c403e",
+                       "label":  "РџС–РґРїРёСЃРєР°",
+                       "name":  "",
+                       "aria-label":  "",
+                       "type":  "tab",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "placement":  "top",
+                       "endpoint":  0
+                   },
+                   {
+                       "key":  "field_682372bdc403f",
+                       "label":  "Р—РѕР±СЂР°Р¶РµРЅРЅСЏ",
+                       "name":  "main-sub-zobrazhennya",
+                       "aria-label":  "",
+                       "type":  "image",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "return_format":  "id",
+                       "library":  "all",
+                       "min_width":  "",
+                       "min_height":  "",
+                       "min_size":  "",
+                       "max_width":  "",
+                       "max_height":  "",
+                       "max_size":  "",
+                       "mime_types":  "",
+                       "preview_size":  "medium"
+                   },
+                   {
+                       "key":  "field_682372c9c4040",
+                       "label":  "Р—Р°РіРѕР»РѕРІРѕРє",
+                       "name":  "main-sub-zagolovok",
+                       "aria-label":  "",
+                       "type":  "text",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "maxlength":  "",
+                       "placeholder":  "",
+                       "prepend":  "",
+                       "append":  ""
+                   },
+                   {
+                       "key":  "field_682372d0c4041",
+                       "label":  "РђРЅРѕРЅСЃ",
+                       "name":  "main-sub-anons",
+                       "aria-label":  "",
+                       "type":  "text",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "maxlength":  "",
+                       "placeholder":  "",
+                       "prepend":  "",
+                       "append":  ""
+                   },
+                   {
+                       "key":  "field_68237311de9af",
+                       "label":  "РџСЂРѕ РјР°РіР°Р·РёРЅ",
+                       "name":  "",
+                       "aria-label":  "",
+                       "type":  "tab",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "placement":  "top",
+                       "endpoint":  0
+                   },
+                   {
+                       "key":  "field_6823731bde9b0",
+                       "label":  "Р¤РѕС‚Рѕ 1",
+                       "name":  "main-about-foto_1",
+                       "aria-label":  "",
+                       "type":  "image",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "return_format":  "id",
+                       "library":  "all",
+                       "min_width":  "",
+                       "min_height":  "",
+                       "min_size":  "",
+                       "max_width":  "",
+                       "max_height":  "",
+                       "max_size":  "",
+                       "mime_types":  "",
+                       "preview_size":  "medium"
+                   },
+                   {
+                       "key":  "field_68237321de9b1",
+                       "label":  "Р¤РѕС‚Рѕ 2",
+                       "name":  "main-about-foto_2",
+                       "aria-label":  "",
+                       "type":  "image",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "return_format":  "id",
+                       "library":  "all",
+                       "min_width":  "",
+                       "min_height":  "",
+                       "min_size":  "",
+                       "max_width":  "",
+                       "max_height":  "",
+                       "max_size":  "",
+                       "mime_types":  "",
+                       "preview_size":  "medium"
+                   },
+                   {
+                       "key":  "field_68237332de9b3",
+                       "label":  "РћРїРёСЃ",
+                       "name":  "main-about-opys",
+                       "aria-label":  "",
+                       "type":  "wysiwyg",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "tabs":  "all",
+                       "toolbar":  "full",
+                       "media_upload":  1,
+                       "delay":  0
+                   }
+               ],
+    "location":  [
+                     [
+                         {
+                             "param":  "page",
+                             "operator":  "==",
+                             "value":  "8"
+                         }
+                     ]
+                 ],
+    "menu_order":  0,
+    "position":  "normal",
+    "style":  "default",
+    "label_placement":  "top",
+    "instruction_placement":  "label",
+    "hide_on_screen":  "",
+    "active":  true,
+    "description":  "",
+    "show_in_rest":  0
+}

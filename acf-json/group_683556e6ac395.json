@@ -1,0 +1,108 @@
+﻿{
+    "key":  "group_683556e6ac395",
+    "title":  "Р“Р°Р»РµСЂРµСЏ",
+    "fields":  [
+                   {
+                       "key":  "field_683556e66bf73",
+                       "label":  "Р¤РѕС‚Рѕ",
+                       "name":  "product_gallery",
+                       "aria-label":  "",
+                       "type":  "gallery",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "return_format":  "id",
+                       "library":  "all",
+                       "min":  "",
+                       "max":  5,
+                       "min_width":  "",
+                       "min_height":  "",
+                       "min_size":  "",
+                       "max_width":  "",
+                       "max_height":  "",
+                       "max_size":  "",
+                       "mime_types":  "",
+                       "insert":  "append",
+                       "preview_size":  "medium"
+                   },
+                   {
+                       "key":  "field_69733cdbef12d",
+                       "label":  "Р¤РѕС‚Рѕ РґР»СЏ Instagram",
+                       "name":  "product_gallery_instagram",
+                       "aria-label":  "",
+                       "type":  "gallery",
+                       "instructions":  "Р¤РѕСЂРјР°С‚ С„РѕС‚Рѕ 4:5. РќР°РїСЂРёРєР»Р°Рґ 1080Г—1350",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "return_format":  "id",
+                       "library":  "all",
+                       "min":  "",
+                       "max":  5,
+                       "min_width":  "",
+                       "min_height":  "",
+                       "min_size":  "",
+                       "max_width":  "",
+                       "max_height":  "",
+                       "max_size":  "",
+                       "mime_types":  "",
+                       "insert":  "append",
+                       "preview_size":  "medium"
+                   },
+                   {
+                       "key":  "field_6836a86d3a295",
+                       "label":  "Р’С–РґРµРѕ",
+                       "name":  "product_videos",
+                       "aria-label":  "",
+                       "type":  "gallery",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "return_format":  "id",
+                       "library":  "all",
+                       "min":  "",
+                       "max":  5,
+                       "min_width":  "",
+                       "min_height":  "",
+                       "min_size":  "",
+                       "max_width":  "",
+                       "max_height":  "",
+                       "max_size":  "",
+                       "mime_types":  "",
+                       "insert":  "append",
+                       "preview_size":  "medium"
+                   }
+               ],
+    "location":  [
+                     [
+                         {
+                             "param":  "post_type",
+                             "operator":  "==",
+                             "value":  "product"
+                         }
+                     ]
+                 ],
+    "menu_order":  50,
+    "position":  "normal",
+    "style":  "default",
+    "label_placement":  "top",
+    "instruction_placement":  "label",
+    "hide_on_screen":  "",
+    "active":  true,
+    "description":  "Р”Р»СЏ С‚РѕРІР°СЂС–РІ",
+    "show_in_rest":  0
+}

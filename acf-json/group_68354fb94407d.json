@@ -1,0 +1,346 @@
+﻿{
+    "key":  "group_68354fb94407d",
+    "title":  "Р”РѕРґР°С‚РєРѕРІС– РїРѕР»СЏ РґР»СЏ С‚РѕРІР°СЂС–РІ",
+    "fields":  [
+                   {
+                       "key":  "field_6835542ebe43b",
+                       "label":  "РђСЂС‚РёРєСѓР»",
+                       "name":  "product_article",
+                       "aria-label":  "",
+                       "type":  "text",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "25",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "maxlength":  "",
+                       "placeholder":  "",
+                       "prepend":  "",
+                       "append":  ""
+                   },
+                   {
+                       "key":  "field_683554cdbe43c",
+                       "label":  "Р¦С–РЅР°",
+                       "name":  "product_price",
+                       "aria-label":  "",
+                       "type":  "number",
+                       "instructions":  "",
+                       "required":  1,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "25",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  0,
+                       "min":  0,
+                       "max":  "",
+                       "placeholder":  0,
+                       "step":  "",
+                       "prepend":  "",
+                       "append":  "РіСЂРЅ"
+                   },
+                   {
+                       "key":  "field_68355c1a991bd",
+                       "label":  "РђРєС†С–Р№РЅР° С†С–РЅР°",
+                       "name":  "product_promo_price",
+                       "aria-label":  "",
+                       "type":  "number",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "25",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  0,
+                       "min":  0,
+                       "max":  "",
+                       "placeholder":  0,
+                       "step":  "",
+                       "prepend":  "",
+                       "append":  "РіСЂРЅ"
+                   },
+                   {
+                       "key":  "field_683555884dd7e",
+                       "label":  "РЎС‚Р°С‚СѓСЃ",
+                       "name":  "product_status",
+                       "aria-label":  "",
+                       "type":  "true_false",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "25",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "message":  "",
+                       "default_value":  0,
+                       "ui_on_text":  "Р’ РЅР°СЏРІРЅРѕСЃС‚С–",
+                       "ui_off_text":  "Р’С–РґСЃСѓС‚РЅС–Р№",
+                       "ui":  1
+                   },
+                   {
+                       "key":  "field_6973439ae8d52",
+                       "label":  "Р”РѕРґР°С‚Рё РґРѕ С„С–РґСѓ",
+                       "name":  "product_feed_status",
+                       "aria-label":  "",
+                       "type":  "true_false",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "25",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "message":  "",
+                       "default_value":  0,
+                       "ui_on_text":  "Р’ РЅР°СЏРІРЅРѕСЃС‚С–",
+                       "ui_off_text":  "Р’С–РґСЃСѓС‚РЅС–Р№",
+                       "ui":  1
+                   },
+                   {
+                       "key":  "field_68355d9c6adc3",
+                       "label":  "РќРѕРІРёРЅРєР°",
+                       "name":  "is_product_new",
+                       "aria-label":  "",
+                       "type":  "true_false",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "33",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "message":  "",
+                       "default_value":  0,
+                       "ui_on_text":  "РўР°Рє",
+                       "ui_off_text":  "РќС–",
+                       "ui":  1
+                   },
+                   {
+                       "key":  "field_68355e1bd876c",
+                       "label":  "Р РѕР·РїСЂРѕРґР°Р¶",
+                       "name":  "is_product_sale",
+                       "aria-label":  "",
+                       "type":  "true_false",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "33",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "message":  "",
+                       "default_value":  0,
+                       "ui_on_text":  "РўР°Рє",
+                       "ui_off_text":  "РќС–",
+                       "ui":  1
+                   },
+                   {
+                       "key":  "field_68355e39d876d",
+                       "label":  "Р‘РµСЃС‚СЃРµР»РµСЂ",
+                       "name":  "is_product_bestseller",
+                       "aria-label":  "",
+                       "type":  "true_false",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "33",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "message":  "",
+                       "default_value":  0,
+                       "ui_on_text":  "РўР°Рє",
+                       "ui_off_text":  "РќС–",
+                       "ui":  1
+                   },
+                   {
+                       "key":  "field_6939b0785e61b",
+                       "label":  "РћС‡С–РєСѓС”С‚СЊСЃСЏ",
+                       "name":  "is_product_expected",
+                       "aria-label":  "",
+                       "type":  "true_false",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "33",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "message":  "",
+                       "default_value":  0,
+                       "ui_on_text":  "РўР°Рє",
+                       "ui_off_text":  "РќС–",
+                       "ui":  1
+                   },
+                   {
+                       "key":  "field_6840993d23ba0",
+                       "label":  "Р“СЂСѓРїР° С‚РѕРІР°СЂС–РІ",
+                       "name":  "product_group",
+                       "aria-label":  "",
+                       "type":  "taxonomy",
+                       "instructions":  "Р”Р»СЏ СЂРµРґР°РіСѓРІР°РЅРЅСЏ РѕР±СЂР°РЅРѕС— РіСЂСѓРїРё С‚РѕРІР°СЂС–РІ РїРµСЂРµР№РґС–С‚СЊ Р·Р° {{product_group_link}}. РЇРєС‰Рѕ РІРё С‰РѕР№РЅРѕ РІСЃС‚Р°РЅРѕРІРёР»Рё Р°Р±Рѕ Р·РјС–РЅРёР»Рё РіСЂСѓРїСѓ, С‚Рѕ РЅРµРѕР±С…С–РґРЅРѕ СЃРїРѕС‡Р°С‚РєСѓ Р·Р±РµСЂРµРіС‚Рё РґР°РЅС–.",
+                       "required":  1,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "taxonomy":  "product_group",
+                       "add_term":  0,
+                       "save_terms":  0,
+                       "load_terms":  0,
+                       "return_format":  "id",
+                       "field_type":  "select",
+                       "allow_null":  0,
+                       "bidirectional":  0,
+                       "multiple":  0,
+                       "bidirectional_target":  [
+
+                                                ]
+                   },
+                   {
+                       "key":  "field_683552e397363",
+                       "label":  "РљРѕР»С–СЂ",
+                       "name":  "product_color",
+                       "aria-label":  "",
+                       "type":  "taxonomy",
+                       "instructions":  "",
+                       "required":  1,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "taxonomy":  "color",
+                       "add_term":  0,
+                       "save_terms":  0,
+                       "load_terms":  0,
+                       "return_format":  "object",
+                       "field_type":  "select",
+                       "allow_null":  0,
+                       "bidirectional":  0,
+                       "multiple":  0,
+                       "bidirectional_target":  [
+
+                                                ]
+                   },
+                   {
+                       "key":  "field_69a7912bc1d09",
+                       "label":  "Р’СЃС– СЂРѕР·РјС–СЂРё",
+                       "name":  "product_size_all",
+                       "aria-label":  "",
+                       "type":  "taxonomy",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "taxonomy":  "size",
+                       "add_term":  0,
+                       "save_terms":  0,
+                       "load_terms":  0,
+                       "return_format":  "object",
+                       "field_type":  "multi_select",
+                       "allow_null":  0,
+                       "bidirectional":  0,
+                       "multiple":  0,
+                       "bidirectional_target":  [
+
+                                                ]
+                   },
+                   {
+                       "key":  "field_6835526697362",
+                       "label":  "Р”РѕСЃС‚СѓРїРЅС– СЂРѕР·РјС–СЂРё",
+                       "name":  "product_size",
+                       "aria-label":  "",
+                       "type":  "taxonomy",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "taxonomy":  "size",
+                       "add_term":  0,
+                       "save_terms":  0,
+                       "load_terms":  0,
+                       "return_format":  "object",
+                       "field_type":  "multi_select",
+                       "allow_null":  0,
+                       "bidirectional":  0,
+                       "multiple":  0,
+                       "bidirectional_target":  [
+
+                                                ]
+                   },
+                   {
+                       "key":  "field_68c7d479791d1",
+                       "label":  "РЎСѓРїСѓС‚РЅС– С‚РѕРІР°СЂРё",
+                       "name":  "similar_products",
+                       "aria-label":  "",
+                       "type":  "post_object",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "post_type":  [
+                                         "product"
+                                     ],
+                       "post_status":  [
+                                           "publish"
+                                       ],
+                       "taxonomy":  "",
+                       "return_format":  "object",
+                       "multiple":  1,
+                       "allow_null":  0,
+                       "bidirectional":  0,
+                       "ui":  1,
+                       "bidirectional_target":  [
+
+                                                ]
+                   }
+               ],
+    "location":  [
+                     [
+                         {
+                             "param":  "post_type",
+                             "operator":  "==",
+                             "value":  "product"
+                         }
+                     ]
+                 ],
+    "menu_order":  20,
+    "position":  "normal",
+    "style":  "default",
+    "label_placement":  "top",
+    "instruction_placement":  "label",
+    "hide_on_screen":  "",
+    "active":  true,
+    "description":  "Р”РѕРґР°С‚РєРѕРІС– РїРѕР»СЏ РґР»СЏ С‚РѕРІР°СЂС–РІ",
+    "show_in_rest":  0
+}

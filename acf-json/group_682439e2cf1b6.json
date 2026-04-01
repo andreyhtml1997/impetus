@@ -1,0 +1,433 @@
+﻿{
+    "key":  "group_682439e2cf1b6",
+    "title":  "РџСЂРѕ РЅР°СЃ",
+    "fields":  [
+                   {
+                       "key":  "field_682439e25f8cb",
+                       "label":  "Hero",
+                       "name":  "",
+                       "aria-label":  "",
+                       "type":  "tab",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "placement":  "top",
+                       "endpoint":  0
+                   },
+                   {
+                       "key":  "field_68243a2c5f8cd",
+                       "label":  "Р—Р°РіРѕР»РѕРІРѕРє",
+                       "name":  "about-hero-zagolovok",
+                       "aria-label":  "",
+                       "type":  "text",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "maxlength":  "",
+                       "placeholder":  "",
+                       "prepend":  "",
+                       "append":  ""
+                   },
+                   {
+                       "key":  "field_68243a315f8ce",
+                       "label":  "РџС–РґР·Р°РіРѕР»РѕРІРѕРє",
+                       "name":  "about-hero-pidzagolovok",
+                       "aria-label":  "",
+                       "type":  "text",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "maxlength":  "",
+                       "placeholder":  "",
+                       "prepend":  "",
+                       "append":  ""
+                   },
+                   {
+                       "key":  "field_68243a375f8cf",
+                       "label":  "РђРЅРѕРЅСЃ",
+                       "name":  "about-hero-anons",
+                       "aria-label":  "",
+                       "type":  "textarea",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "maxlength":  "",
+                       "rows":  "",
+                       "placeholder":  "",
+                       "new_lines":  ""
+                   },
+                   {
+                       "key":  "field_68243a761b8e2",
+                       "label":  "Р‘СЂРµРЅРґ",
+                       "name":  "",
+                       "aria-label":  "",
+                       "type":  "tab",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "placement":  "top",
+                       "endpoint":  0
+                   },
+                   {
+                       "key":  "field_68243a831b8e3",
+                       "label":  "Р—Р°РіРѕР»РѕРІРѕРє",
+                       "name":  "about-brand-zagolovok",
+                       "aria-label":  "",
+                       "type":  "text",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "maxlength":  "",
+                       "placeholder":  "",
+                       "prepend":  "",
+                       "append":  ""
+                   },
+                   {
+                       "key":  "field_68243a8a1b8e4",
+                       "label":  "РџС–РґР·Р°РіРѕР»РѕРІРѕРє",
+                       "name":  "about-brand-pidzagolovok",
+                       "aria-label":  "",
+                       "type":  "text",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "maxlength":  "",
+                       "placeholder":  "",
+                       "prepend":  "",
+                       "append":  ""
+                   },
+                   {
+                       "key":  "field_68243a951b8e5",
+                       "label":  "РђРЅРѕРЅСЃ",
+                       "name":  "about-brand-anons",
+                       "aria-label":  "",
+                       "type":  "text",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "maxlength":  "",
+                       "placeholder":  "",
+                       "prepend":  "",
+                       "append":  ""
+                   },
+                   {
+                       "key":  "field_68243a991b8e6",
+                       "label":  "РџС–РґР·Р°РіРѕР»РѕРІРѕРє 2",
+                       "name":  "about-brand-pidzagolovok_2",
+                       "aria-label":  "",
+                       "type":  "text",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "maxlength":  "",
+                       "placeholder":  "",
+                       "prepend":  "",
+                       "append":  ""
+                   },
+                   {
+                       "key":  "field_68243aa11b8e7",
+                       "label":  "РђРЅРѕРЅСЃ 2",
+                       "name":  "about-brand-anons_2",
+                       "aria-label":  "",
+                       "type":  "wysiwyg",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "tabs":  "all",
+                       "toolbar":  "full",
+                       "media_upload":  1,
+                       "delay":  0
+                   },
+                   {
+                       "key":  "field_68243aac1b8e8",
+                       "label":  "3 С„РѕС‚Рѕ",
+                       "name":  "about-brand-3_foto",
+                       "aria-label":  "",
+                       "type":  "gallery",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "return_format":  "id",
+                       "library":  "all",
+                       "min":  "",
+                       "max":  "",
+                       "min_width":  "",
+                       "min_height":  "",
+                       "min_size":  "",
+                       "max_width":  "",
+                       "max_height":  "",
+                       "max_size":  "",
+                       "mime_types":  "",
+                       "insert":  "append",
+                       "preview_size":  "medium"
+                   },
+                   {
+                       "key":  "field_68243ade688a9",
+                       "label":  "Р’РёС€РµРЅСЊРєР°",
+                       "name":  "about-brand-vishenka",
+                       "aria-label":  "",
+                       "type":  "image",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "return_format":  "id",
+                       "library":  "all",
+                       "min_width":  "",
+                       "min_height":  "",
+                       "min_size":  "",
+                       "max_width":  "",
+                       "max_height":  "",
+                       "max_size":  "",
+                       "mime_types":  "",
+                       "preview_size":  "medium"
+                   },
+                   {
+                       "key":  "field_68243ae5688aa",
+                       "label":  "Р’РёС€РµРЅСЊРєР° С‚РµРєСЃС‚",
+                       "name":  "about-brand-vishenka_tekst",
+                       "aria-label":  "",
+                       "type":  "text",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "maxlength":  "",
+                       "placeholder":  "",
+                       "prepend":  "",
+                       "append":  ""
+                   },
+                   {
+                       "key":  "field_68243b0597eff",
+                       "label":  "Impetus",
+                       "name":  "",
+                       "aria-label":  "",
+                       "type":  "tab",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "placement":  "top",
+                       "endpoint":  0
+                   },
+                   {
+                       "key":  "field_68243b1097f00",
+                       "label":  "Р’С–РґРµРѕ",
+                       "name":  "about-imp-video",
+                       "aria-label":  "",
+                       "type":  "file",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "return_format":  "url",
+                       "library":  "all",
+                       "min_size":  "",
+                       "max_size":  "",
+                       "mime_types":  ""
+                   },
+                   {
+                       "key":  "field_68243b2297f01",
+                       "label":  "Р—Р°РіРѕР»РѕРІРѕРє",
+                       "name":  "about-imp-zagolovok",
+                       "aria-label":  "",
+                       "type":  "text",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "maxlength":  "",
+                       "placeholder":  "",
+                       "prepend":  "",
+                       "append":  ""
+                   },
+                   {
+                       "key":  "field_68243b2897f02",
+                       "label":  "РџС–РґР·Р°РіРѕР»РѕРІРѕРє",
+                       "name":  "about-imp-pidzagolovok",
+                       "aria-label":  "",
+                       "type":  "text",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "maxlength":  "",
+                       "placeholder":  "",
+                       "prepend":  "",
+                       "append":  ""
+                   },
+                   {
+                       "key":  "field_68243b3097f03",
+                       "label":  "РђРЅРѕРЅСЃ",
+                       "name":  "about-imp-anons",
+                       "aria-label":  "",
+                       "type":  "wysiwyg",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "tabs":  "all",
+                       "toolbar":  "full",
+                       "media_upload":  1,
+                       "delay":  0
+                   },
+                   {
+                       "key":  "field_68243b3a97f04",
+                       "label":  "Р¤РѕС‚Рѕ",
+                       "name":  "about-imp-foto",
+                       "aria-label":  "",
+                       "type":  "image",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "return_format":  "id",
+                       "library":  "all",
+                       "min_width":  "",
+                       "min_height":  "",
+                       "min_size":  "",
+                       "max_width":  "",
+                       "max_height":  "",
+                       "max_size":  "",
+                       "mime_types":  "",
+                       "preview_size":  "medium"
+                   },
+                   {
+                       "key":  "field_68243b4097f05",
+                       "label":  "Р—Р°РіРѕР»РѕРІРѕРє 2",
+                       "name":  "about-imp-zagolovok_2",
+                       "aria-label":  "",
+                       "type":  "text",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "maxlength":  "",
+                       "placeholder":  "",
+                       "prepend":  "",
+                       "append":  ""
+                   }
+               ],
+    "location":  [
+                     [
+                         {
+                             "param":  "page_template",
+                             "operator":  "==",
+                             "value":  "page-about.php"
+                         }
+                     ]
+                 ],
+    "menu_order":  0,
+    "position":  "normal",
+    "style":  "default",
+    "label_placement":  "top",
+    "instruction_placement":  "label",
+    "hide_on_screen":  "",
+    "active":  true,
+    "description":  "",
+    "show_in_rest":  0
+}

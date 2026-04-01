@@ -1,0 +1,101 @@
+﻿{
+    "key":  "group_6841a1798994b",
+    "title":  "Р”РѕРґР°С‚РєРѕРІС– РїРѕР»СЏ РґР»СЏ С€С‚СЂРёС…-РєРѕРґС–РІ",
+    "fields":  [
+                   {
+                       "key":  "field_6841a178442b1",
+                       "label":  "РўРѕРІР°СЂ",
+                       "name":  "barcode_product",
+                       "aria-label":  "",
+                       "type":  "post_object",
+                       "instructions":  "",
+                       "required":  1,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "post_type":  [
+                                         "product"
+                                     ],
+                       "post_status":  "",
+                       "taxonomy":  "",
+                       "return_format":  "id",
+                       "multiple":  0,
+                       "allow_null":  0,
+                       "bidirectional":  0,
+                       "ui":  1,
+                       "bidirectional_target":  [
+
+                                                ]
+                   },
+                   {
+                       "key":  "field_6841a20e6e6ad",
+                       "label":  "Р РѕР·РјС–СЂ",
+                       "name":  "barcode_size",
+                       "aria-label":  "",
+                       "type":  "taxonomy",
+                       "instructions":  "",
+                       "required":  1,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "taxonomy":  "size",
+                       "add_term":  0,
+                       "save_terms":  0,
+                       "load_terms":  0,
+                       "return_format":  "object",
+                       "field_type":  "select",
+                       "allow_null":  0,
+                       "bidirectional":  0,
+                       "multiple":  0,
+                       "bidirectional_target":  [
+
+                                                ]
+                   },
+                   {
+                       "key":  "field_6841a2d3cb401",
+                       "label":  "Р—Р°Р»РёС€РѕРє",
+                       "name":  "barcode_stock",
+                       "aria-label":  "",
+                       "type":  "number",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  0,
+                       "min":  0,
+                       "max":  "",
+                       "placeholder":  "",
+                       "step":  "",
+                       "prepend":  "",
+                       "append":  ""
+                   }
+               ],
+    "location":  [
+                     [
+                         {
+                             "param":  "taxonomy",
+                             "operator":  "==",
+                             "value":  "barcode"
+                         }
+                     ]
+                 ],
+    "menu_order":  0,
+    "position":  "normal",
+    "style":  "default",
+    "label_placement":  "top",
+    "instruction_placement":  "label",
+    "hide_on_screen":  "",
+    "active":  true,
+    "description":  "Р”РѕРґР°С‚РєРѕРІС– РїРѕР»СЏ РґР»СЏ С€С‚СЂРёС…-РєРѕРґС–РІ",
+    "show_in_rest":  0
+}

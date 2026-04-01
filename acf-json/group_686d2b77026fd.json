@@ -1,0 +1,44 @@
+﻿{
+    "key":  "group_686d2b77026fd",
+    "title":  "Р”РѕРґР°С‚РєРѕРІС– РїРѕР»СЏ РґР»СЏ С€Р°Р±Р»РѕРЅСѓ Р§РµРєР°СѓС‚",
+    "fields":  [
+                   {
+                       "key":  "field_686d2b76ca81b",
+                       "label":  "РћРїРёСЃ РґРѕ СЃРїРѕСЃРѕР±С–РІ РѕРїР»Р°С‚Рё",
+                       "name":  "page_checkout_payment_note",
+                       "aria-label":  "",
+                       "type":  "wysiwyg",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "tabs":  "all",
+                       "toolbar":  "full",
+                       "media_upload":  1,
+                       "delay":  0
+                   }
+               ],
+    "location":  [
+                     [
+                         {
+                             "param":  "post_template",
+                             "operator":  "==",
+                             "value":  "page-checkout.php"
+                         }
+                     ]
+                 ],
+    "menu_order":  0,
+    "position":  "normal",
+    "style":  "default",
+    "label_placement":  "top",
+    "instruction_placement":  "label",
+    "hide_on_screen":  "",
+    "active":  true,
+    "description":  "Р”РѕРґР°С‚РєРѕРІС– РїРѕР»СЏ РґР»СЏ С€Р°Р±Р»РѕРЅСѓ Р§РµРєР°СѓС‚",
+    "show_in_rest":  0
+}

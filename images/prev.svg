@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Шар_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 28 28" style="enable-background:new 0 0 28 28;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_00000036253225685596214850000003095450078892542616_);}
+	.st1{fill:#0F1010;}
+</style>
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="28" height="28"/>
+	</defs>
+	<clipPath id="SVGID_00000145040659454591046640000010059094848119707528_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g style="clip-path:url(#SVGID_00000145040659454591046640000010059094848119707528_);">
+		<g>
+			<path class="st1" d="M17.5,23.8c-0.3,0-0.5-0.1-0.7-0.3L8,14.7c-0.4-0.4-0.4-1,0-1.4l8.8-8.8c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4
+				l-8,8l8,8c0.4,0.4,0.4,1,0,1.4C18,23.7,17.8,23.8,17.5,23.8z"/>
+		</g>
+	</g>
+</g>
+</svg>

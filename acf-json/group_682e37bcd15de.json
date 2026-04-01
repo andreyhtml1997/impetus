@@ -1,0 +1,69 @@
+﻿{
+    "key":  "group_682e37bcd15de",
+    "title":  "Р”РѕРґР°С‚РєРѕРІС– РїРѕР»СЏ РґР»СЏ Р°СѓРґРёС‚РѕСЂС–Р№",
+    "fields":  [
+                   {
+                       "key":  "field_68302ec6b46ae",
+                       "label":  "РџРѕРІРЅР° РЅР°Р·РІР°",
+                       "name":  "audience_category_fullname",
+                       "aria-label":  "",
+                       "type":  "text",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "maxlength":  "",
+                       "placeholder":  "",
+                       "prepend":  "",
+                       "append":  ""
+                   },
+                   {
+                       "key":  "field_682e37bdb4e09",
+                       "label":  "Р—РѕР±СЂР°Р¶РµРЅРЅСЏ",
+                       "name":  "audience_category_image",
+                       "aria-label":  "",
+                       "type":  "image",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "return_format":  "id",
+                       "library":  "all",
+                       "min_width":  "",
+                       "min_height":  "",
+                       "min_size":  "",
+                       "max_width":  "",
+                       "max_height":  "",
+                       "max_size":  "",
+                       "mime_types":  "",
+                       "preview_size":  "medium"
+                   }
+               ],
+    "location":  [
+                     [
+                         {
+                             "param":  "taxonomy",
+                             "operator":  "==",
+                             "value":  "audience_category"
+                         }
+                     ]
+                 ],
+    "menu_order":  0,
+    "position":  "normal",
+    "style":  "default",
+    "label_placement":  "top",
+    "instruction_placement":  "label",
+    "hide_on_screen":  "",
+    "active":  true,
+    "description":  "Р”РѕРґР°С‚РєРѕРІС– РїРѕР»СЏ РґР»СЏ Р°СѓРґРёС‚РѕСЂС–Р№",
+    "show_in_rest":  0
+}

@@ -1,0 +1,150 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?2zyulx');
+  src:  url('fonts/icomoon.eot?2zyulx#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?2zyulx') format('truetype'),
+    url('fonts/icomoon.woff?2zyulx') format('woff'),
+    url('fonts/icomoon.svg?2zyulx#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-added:before {
+  content: "\e926";
+  color: #15971c;
+}
+.icon-wtt:before {
+  content: "\e922";
+}
+.icon-tgg:before {
+  content: "\e923";
+}
+.icon-fbb:before {
+  content: "\e924";
+}
+.icon-vbb:before {
+  content: "\e925";
+}
+.icon-m4:before {
+  content: "\e91e";
+}
+.icon-m3:before {
+  content: "\e91f";
+}
+.icon-m2:before {
+  content: "\e920";
+}
+.icon-m1:before {
+  content: "\e921";
+}
+.icon-order:before {
+  content: "\e91d";
+  color: #b83d3d;
+}
+.icon-fav2:before {
+  content: "\e91c";
+}
+.icon-cabinet6:before {
+  content: "\e916";
+}
+.icon-cabinet5:before {
+  content: "\e917";
+}
+.icon-cabinet4:before {
+  content: "\e918";
+}
+.icon-cabinet3:before {
+  content: "\e919";
+}
+.icon-cabinet2:before {
+  content: "\e91a";
+}
+.icon-cabinet1:before {
+  content: "\e91b";
+}
+.icon-rozmir:before {
+  content: "\e915";
+}
+.icon-share:before {
+  content: "\e914";
+}
+.icon-play:before {
+  content: "\e913";
+}
+.icon-filter:before {
+  content: "\e912";
+}
+.icon-more:before {
+  content: "\e911";
+}
+.icon-right2:before {
+  content: "\e910";
+}
+.icon-minus:before {
+  content: "\e904";
+}
+.icon-plus:before {
+  content: "\e90e";
+}
+.icon-trash:before {
+  content: "\e90f";
+}
+.icon-close:before {
+  content: "\e90d";
+}
+.icon-you:before {
+  content: "\e900";
+  color: #fff;
+}
+.icon-tg:before {
+  content: "\e901";
+  color: #fff;
+}
+.icon-fb:before {
+  content: "\e902";
+  color: #fff;
+}
+.icon-insta:before {
+  content: "\e903";
+  color: #fff;
+}
+.icon-right:before {
+  content: "\e905";
+}
+.icon-prev:before {
+  content: "\e906";
+}
+.icon-next:before {
+  content: "\e907";
+}
+.icon-cart:before {
+  content: "\e908";
+}
+.icon-fav:before {
+  content: "\e909";
+}
+.icon-user:before {
+  content: "\e90a";
+}
+.icon-search:before {
+  content: "\e90b";
+}
+.icon-down:before {
+  content: "\e90c";
+}

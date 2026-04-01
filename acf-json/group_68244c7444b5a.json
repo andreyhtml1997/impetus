@@ -1,0 +1,532 @@
+﻿{
+    "key":  "group_68244c7444b5a",
+    "title":  "РџР°СЂС‚РЅРµСЂСЃС‚РІРѕ",
+    "fields":  [
+                   {
+                       "key":  "field_68244ccfc0008",
+                       "label":  "Р§РѕРјСѓ",
+                       "name":  "",
+                       "aria-label":  "",
+                       "type":  "tab",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "placement":  "top",
+                       "endpoint":  0
+                   },
+                   {
+                       "key":  "field_68244cd8c0009",
+                       "label":  "Р—Р°РіРѕР»РѕРІРѕРє",
+                       "name":  "partner-why-zagolovok",
+                       "aria-label":  "",
+                       "type":  "text",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "maxlength":  "",
+                       "placeholder":  "",
+                       "prepend":  "",
+                       "append":  ""
+                   },
+                   {
+                       "key":  "field_68244cdec000a",
+                       "label":  "Р•Р»РµРјРµРЅС‚Рё",
+                       "name":  "partner-why-elementy",
+                       "aria-label":  "",
+                       "type":  "repeater",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "layout":  "table",
+                       "pagination":  0,
+                       "min":  0,
+                       "max":  0,
+                       "collapsed":  "",
+                       "button_label":  "Р”РѕРґР°С‚Рё СЂСЏРґРѕРє",
+                       "rows_per_page":  20,
+                       "sub_fields":  [
+                                          {
+                                              "key":  "field_68244ceac000b",
+                                              "label":  "Р—РЅР°С‡РµРЅРЅСЏ",
+                                              "name":  "partner-why-znachennya",
+                                              "aria-label":  "",
+                                              "type":  "text",
+                                              "instructions":  "",
+                                              "required":  0,
+                                              "conditional_logic":  0,
+                                              "wrapper":  {
+                                                              "width":  "",
+                                                              "class":  "",
+                                                              "id":  ""
+                                                          },
+                                              "default_value":  "",
+                                              "maxlength":  "",
+                                              "placeholder":  "",
+                                              "prepend":  "",
+                                              "append":  "",
+                                              "parent_repeater":  "field_68244cdec000a"
+                                          },
+                                          {
+                                              "key":  "field_68244cefc000c",
+                                              "label":  "РђРЅРѕРЅСЃ",
+                                              "name":  "partner-why-anons",
+                                              "aria-label":  "",
+                                              "type":  "text",
+                                              "instructions":  "",
+                                              "required":  0,
+                                              "conditional_logic":  0,
+                                              "wrapper":  {
+                                                              "width":  "",
+                                                              "class":  "",
+                                                              "id":  ""
+                                                          },
+                                              "default_value":  "",
+                                              "maxlength":  "",
+                                              "placeholder":  "",
+                                              "prepend":  "",
+                                              "append":  "",
+                                              "parent_repeater":  "field_68244cdec000a"
+                                          }
+                                      ]
+                   },
+                   {
+                       "key":  "field_68244d1a08145",
+                       "label":  "Р‘СЂРµРЅРґРё",
+                       "name":  "",
+                       "aria-label":  "",
+                       "type":  "tab",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "placement":  "top",
+                       "endpoint":  0
+                   },
+                   {
+                       "key":  "field_68244d2308146",
+                       "label":  "Р—Р°РіРѕР»РѕРІРѕРє",
+                       "name":  "partner-zagolovok",
+                       "aria-label":  "",
+                       "type":  "text",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "maxlength":  "",
+                       "placeholder":  "",
+                       "prepend":  "",
+                       "append":  ""
+                   },
+                   {
+                       "key":  "field_68244d2808147",
+                       "label":  "Р‘СЂРµРЅРґРё",
+                       "name":  "partner-brendy",
+                       "aria-label":  "",
+                       "type":  "gallery",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "return_format":  "id",
+                       "library":  "all",
+                       "min":  "",
+                       "max":  "",
+                       "min_width":  "",
+                       "min_height":  "",
+                       "min_size":  "",
+                       "max_width":  "",
+                       "max_height":  "",
+                       "max_size":  "",
+                       "mime_types":  "",
+                       "insert":  "append",
+                       "preview_size":  "medium"
+                   },
+                   {
+                       "key":  "field_68244de610d99",
+                       "label":  "Р†РЅС„Рѕ",
+                       "name":  "",
+                       "aria-label":  "",
+                       "type":  "tab",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "placement":  "top",
+                       "endpoint":  0
+                   },
+                   {
+                       "key":  "field_68244dee10d9a",
+                       "label":  "Р¤РѕС‚Рѕ",
+                       "name":  "partner-info-foto",
+                       "aria-label":  "",
+                       "type":  "image",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "return_format":  "id",
+                       "library":  "all",
+                       "min_width":  "",
+                       "min_height":  "",
+                       "min_size":  "",
+                       "max_width":  "",
+                       "max_height":  "",
+                       "max_size":  "",
+                       "mime_types":  "",
+                       "preview_size":  "medium"
+                   },
+                   {
+                       "key":  "field_68244df410d9b",
+                       "label":  "Р‘Р»РѕРєРё",
+                       "name":  "partner-info-bloky",
+                       "aria-label":  "",
+                       "type":  "repeater",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "layout":  "table",
+                       "pagination":  0,
+                       "min":  0,
+                       "max":  0,
+                       "collapsed":  "",
+                       "button_label":  "Р”РѕРґР°С‚Рё СЂСЏРґРѕРє",
+                       "rows_per_page":  20,
+                       "sub_fields":  [
+                                          {
+                                              "key":  "field_68244dfd10d9c",
+                                              "label":  "Р—Р°РіРѕР»РѕРІРѕРє",
+                                              "name":  "partner-info-zagolovok",
+                                              "aria-label":  "",
+                                              "type":  "text",
+                                              "instructions":  "",
+                                              "required":  0,
+                                              "conditional_logic":  0,
+                                              "wrapper":  {
+                                                              "width":  "",
+                                                              "class":  "",
+                                                              "id":  ""
+                                                          },
+                                              "default_value":  "",
+                                              "maxlength":  "",
+                                              "placeholder":  "",
+                                              "prepend":  "",
+                                              "append":  "",
+                                              "parent_repeater":  "field_68244df410d9b"
+                                          },
+                                          {
+                                              "key":  "field_68244e0310d9d",
+                                              "label":  "РђРЅРѕРЅСЃ",
+                                              "name":  "partner-info-anons",
+                                              "aria-label":  "",
+                                              "type":  "textarea",
+                                              "instructions":  "",
+                                              "required":  0,
+                                              "conditional_logic":  0,
+                                              "wrapper":  {
+                                                              "width":  "",
+                                                              "class":  "",
+                                                              "id":  ""
+                                                          },
+                                              "default_value":  "",
+                                              "maxlength":  "",
+                                              "rows":  "",
+                                              "placeholder":  "",
+                                              "new_lines":  "",
+                                              "parent_repeater":  "field_68244df410d9b"
+                                          }
+                                      ]
+                   },
+                   {
+                       "key":  "field_68244e3144eb0",
+                       "label":  "Р“РµРѕРіСЂР°С„С–СЏ",
+                       "name":  "",
+                       "aria-label":  "",
+                       "type":  "tab",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "placement":  "top",
+                       "endpoint":  0
+                   },
+                   {
+                       "key":  "field_68244e3d44eb1",
+                       "label":  "Р¤РѕРЅ",
+                       "name":  "partner-geo-fon",
+                       "aria-label":  "",
+                       "type":  "image",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "return_format":  "id",
+                       "library":  "all",
+                       "min_width":  "",
+                       "min_height":  "",
+                       "min_size":  "",
+                       "max_width":  "",
+                       "max_height":  "",
+                       "max_size":  "",
+                       "mime_types":  "",
+                       "preview_size":  "medium"
+                   },
+                   {
+                       "key":  "field_68244e6744eb4",
+                       "label":  "Р‘Р»РѕРєРё",
+                       "name":  "partner-geo-bloky",
+                       "aria-label":  "",
+                       "type":  "repeater",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "layout":  "block",
+                       "pagination":  0,
+                       "min":  0,
+                       "max":  0,
+                       "collapsed":  "",
+                       "button_label":  "Р”РѕРґР°С‚Рё СЂСЏРґРѕРє",
+                       "rows_per_page":  20,
+                       "sub_fields":  [
+                                          {
+                                              "key":  "field_68244e7544eb5",
+                                              "label":  "Р—Р°РіРѕР»РѕРІРѕРє",
+                                              "name":  "partner-geo-zagolovok",
+                                              "aria-label":  "",
+                                              "type":  "text",
+                                              "instructions":  "",
+                                              "required":  0,
+                                              "conditional_logic":  0,
+                                              "wrapper":  {
+                                                              "width":  "",
+                                                              "class":  "",
+                                                              "id":  ""
+                                                          },
+                                              "default_value":  "",
+                                              "maxlength":  "",
+                                              "placeholder":  "",
+                                              "prepend":  "",
+                                              "append":  "",
+                                              "parent_repeater":  "field_68244e6744eb4"
+                                          },
+                                          {
+                                              "key":  "field_68244e7a44eb6",
+                                              "label":  "РџС–РґР·Р°РіРѕР»РѕРІРѕРє",
+                                              "name":  "partner-geo-pidzagolovok",
+                                              "aria-label":  "",
+                                              "type":  "text",
+                                              "instructions":  "",
+                                              "required":  0,
+                                              "conditional_logic":  0,
+                                              "wrapper":  {
+                                                              "width":  "",
+                                                              "class":  "",
+                                                              "id":  ""
+                                                          },
+                                              "default_value":  "",
+                                              "maxlength":  "",
+                                              "placeholder":  "",
+                                              "prepend":  "",
+                                              "append":  "",
+                                              "parent_repeater":  "field_68244e6744eb4"
+                                          },
+                                          {
+                                              "key":  "field_68244e8044eb7",
+                                              "label":  "Р•Р»РµРјРµРЅС‚Рё",
+                                              "name":  "partner-geo-elementy",
+                                              "aria-label":  "",
+                                              "type":  "repeater",
+                                              "instructions":  "",
+                                              "required":  0,
+                                              "conditional_logic":  0,
+                                              "wrapper":  {
+                                                              "width":  "",
+                                                              "class":  "",
+                                                              "id":  ""
+                                                          },
+                                              "layout":  "table",
+                                              "pagination":  0,
+                                              "min":  0,
+                                              "max":  0,
+                                              "collapsed":  "",
+                                              "button_label":  "Р”РѕРґР°С‚Рё СЂСЏРґРѕРє",
+                                              "rows_per_page":  20,
+                                              "parent_repeater":  "field_68244e6744eb4",
+                                              "sub_fields":  [
+                                                                 {
+                                                                     "key":  "field_68244e8e44eb8",
+                                                                     "label":  "Р—РЅР°С‡РµРЅРЅСЏ",
+                                                                     "name":  "partner-geo-elementy-znachennya",
+                                                                     "aria-label":  "",
+                                                                     "type":  "text",
+                                                                     "instructions":  "",
+                                                                     "required":  0,
+                                                                     "conditional_logic":  0,
+                                                                     "wrapper":  {
+                                                                                     "width":  "",
+                                                                                     "class":  "",
+                                                                                     "id":  ""
+                                                                                 },
+                                                                     "default_value":  "",
+                                                                     "maxlength":  "",
+                                                                     "placeholder":  "",
+                                                                     "prepend":  "",
+                                                                     "append":  "",
+                                                                     "parent_repeater":  "field_68244e8044eb7"
+                                                                 },
+                                                                 {
+                                                                     "key":  "field_68244e9344eb9",
+                                                                     "label":  "РђРЅРѕРЅСЃ",
+                                                                     "name":  "partner-geo-elementy-anons",
+                                                                     "aria-label":  "",
+                                                                     "type":  "text",
+                                                                     "instructions":  "",
+                                                                     "required":  0,
+                                                                     "conditional_logic":  0,
+                                                                     "wrapper":  {
+                                                                                     "width":  "",
+                                                                                     "class":  "",
+                                                                                     "id":  ""
+                                                                                 },
+                                                                     "default_value":  "",
+                                                                     "maxlength":  "",
+                                                                     "placeholder":  "",
+                                                                     "prepend":  "",
+                                                                     "append":  "",
+                                                                     "parent_repeater":  "field_68244e8044eb7"
+                                                                 }
+                                                             ]
+                                          }
+                                      ]
+                   },
+                   {
+                       "key":  "field_68244ebd5cd99",
+                       "label":  "Р¤РѕСЂРјР°",
+                       "name":  "",
+                       "aria-label":  "",
+                       "type":  "tab",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "placement":  "top",
+                       "endpoint":  0
+                   },
+                   {
+                       "key":  "field_68244ed85cd9b",
+                       "label":  "Р—Р°РіРѕР»РѕРІРѕРє",
+                       "name":  "partner-forma-zagolovok",
+                       "aria-label":  "",
+                       "type":  "text",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "maxlength":  "",
+                       "placeholder":  "",
+                       "prepend":  "",
+                       "append":  ""
+                   },
+                   {
+                       "key":  "field_68244ec45cd9a",
+                       "label":  "РђРЅРѕРЅСЃ",
+                       "name":  "partner-forma-anons",
+                       "aria-label":  "",
+                       "type":  "text",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "maxlength":  "",
+                       "placeholder":  "",
+                       "prepend":  "",
+                       "append":  ""
+                   }
+               ],
+    "location":  [
+                     [
+                         {
+                             "param":  "page_template",
+                             "operator":  "==",
+                             "value":  "page-partnership.php"
+                         }
+                     ]
+                 ],
+    "menu_order":  0,
+    "position":  "normal",
+    "style":  "default",
+    "label_placement":  "top",
+    "instruction_placement":  "label",
+    "hide_on_screen":  "",
+    "active":  true,
+    "description":  "",
+    "show_in_rest":  0
+}

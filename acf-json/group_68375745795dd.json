@@ -1,0 +1,250 @@
+﻿{
+    "key":  "group_68375745795dd",
+    "title":  "РџСЂРѕРјРѕ-РєРѕРЅС‚РµРЅС‚",
+    "fields":  [
+                   {
+                       "key":  "field_683758fc1ad43",
+                       "label":  "Р’С–РґРµРѕ",
+                       "name":  "",
+                       "aria-label":  "",
+                       "type":  "tab",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "placement":  "top",
+                       "endpoint":  0
+                   },
+                   {
+                       "key":  "field_6837574599d77",
+                       "label":  "",
+                       "name":  "promotion_videos",
+                       "aria-label":  "",
+                       "type":  "gallery",
+                       "instructions":  "РџСЂРѕРјРѕ-РІС–РґРµРѕ Р±СѓРґСѓС‚СЊ СЂР°РЅРґРѕРјРЅРѕ РІС–РґРѕР±СЂР°Р¶Р°С‚РёСЃСЏ РЅР° СЃС‚РѕСЂС–РЅС†С– РІСЃС–С… С‚РѕРІР°СЂС–РІ",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "return_format":  "url",
+                       "library":  "all",
+                       "min":  "",
+                       "max":  "",
+                       "min_width":  "",
+                       "min_height":  "",
+                       "min_size":  "",
+                       "max_width":  "",
+                       "max_height":  "",
+                       "max_size":  "",
+                       "mime_types":  "mp4",
+                       "insert":  "append",
+                       "preview_size":  "medium"
+                   },
+                   {
+                       "key":  "field_68b5ae49b164d",
+                       "label":  "Р§РѕР»РѕРІС–РєРё",
+                       "name":  "promotion_videos_man",
+                       "aria-label":  "",
+                       "type":  "gallery",
+                       "instructions":  "РџСЂРѕРјРѕ-РІС–РґРµРѕ Р±СѓРґСѓС‚СЊ СЂР°РЅРґРѕРјРЅРѕ РІС–РґРѕР±СЂР°Р¶Р°С‚РёСЃСЏ РЅР° СЃС‚РѕСЂС–РЅС†С– РІСЃС–С… С‚РѕРІР°СЂС–РІ",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "return_format":  "url",
+                       "library":  "all",
+                       "min":  "",
+                       "max":  "",
+                       "min_width":  "",
+                       "min_height":  "",
+                       "min_size":  "",
+                       "max_width":  "",
+                       "max_height":  "",
+                       "max_size":  "",
+                       "mime_types":  "mp4",
+                       "insert":  "append",
+                       "preview_size":  "medium"
+                   },
+                   {
+                       "key":  "field_68b5ae65b164e",
+                       "label":  "Р–С–РЅРєРё",
+                       "name":  "promotion_videos_woman",
+                       "aria-label":  "",
+                       "type":  "gallery",
+                       "instructions":  "РџСЂРѕРјРѕ-РІС–РґРµРѕ Р±СѓРґСѓС‚СЊ СЂР°РЅРґРѕРјРЅРѕ РІС–РґРѕР±СЂР°Р¶Р°С‚РёСЃСЏ РЅР° СЃС‚РѕСЂС–РЅС†С– РІСЃС–С… С‚РѕРІР°СЂС–РІ",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "return_format":  "url",
+                       "library":  "all",
+                       "min":  "",
+                       "max":  "",
+                       "min_width":  "",
+                       "min_height":  "",
+                       "min_size":  "",
+                       "max_width":  "",
+                       "max_height":  "",
+                       "max_size":  "",
+                       "mime_types":  "mp4",
+                       "insert":  "append",
+                       "preview_size":  "medium"
+                   },
+                   {
+                       "key":  "field_68b5b2dffe5d6",
+                       "label":  "Р”С–С‚Рё",
+                       "name":  "promotion_videos_kids",
+                       "aria-label":  "",
+                       "type":  "gallery",
+                       "instructions":  "РџСЂРѕРјРѕ-РІС–РґРµРѕ Р±СѓРґСѓС‚СЊ СЂР°РЅРґРѕРјРЅРѕ РІС–РґРѕР±СЂР°Р¶Р°С‚РёСЃСЏ РЅР° СЃС‚РѕСЂС–РЅС†С– РІСЃС–С… С‚РѕРІР°СЂС–РІ",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "return_format":  "url",
+                       "library":  "all",
+                       "min":  "",
+                       "max":  "",
+                       "min_width":  "",
+                       "min_height":  "",
+                       "min_size":  "",
+                       "max_width":  "",
+                       "max_height":  "",
+                       "max_size":  "",
+                       "mime_types":  "mp4",
+                       "insert":  "append",
+                       "preview_size":  "medium"
+                   },
+                   {
+                       "key":  "field_683759a6abd27",
+                       "label":  "Р‘Р°РЅРµСЂРё",
+                       "name":  "",
+                       "aria-label":  "",
+                       "type":  "tab",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "placement":  "top",
+                       "endpoint":  0
+                   },
+                   {
+                       "key":  "field_683759bcabd28",
+                       "label":  "Р СѓС…РѕРјРёР№ СЂСЏРґРѕРє РѕРіРѕР»РѕС€РµРЅРЅСЏ",
+                       "name":  "header_running_advertisement",
+                       "aria-label":  "",
+                       "type":  "text",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "maxlength":  "",
+                       "placeholder":  "",
+                       "prepend":  "",
+                       "append":  ""
+                   },
+                   {
+                       "key":  "field_6926412fa2e7d",
+                       "label":  "РўРµРєСЃС‚ Р·Р°РѕС…РѕС‡РµРЅРЅСЏ",
+                       "name":  "header_running_advertisement_cta",
+                       "aria-label":  "",
+                       "type":  "text",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "maxlength":  "",
+                       "placeholder":  "",
+                       "prepend":  "",
+                       "append":  ""
+                   },
+                   {
+                       "key":  "field_69264132a2e7e",
+                       "label":  "РўРµРєСЃС‚ РІРґР°Р»РѕРіРѕ РєРѕРїС–СЋРІР°РЅРЅСЏ",
+                       "name":  "header_running_advertisement_success",
+                       "aria-label":  "",
+                       "type":  "text",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "maxlength":  "",
+                       "placeholder":  "",
+                       "prepend":  "",
+                       "append":  ""
+                   },
+                   {
+                       "key":  "field_6926419da2e7f",
+                       "label":  "РџСЂРѕРјРѕРєРѕРґ",
+                       "name":  "header_running_advertisement_promocode",
+                       "aria-label":  "",
+                       "type":  "text",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "maxlength":  "",
+                       "placeholder":  "",
+                       "prepend":  "",
+                       "append":  ""
+                   }
+               ],
+    "location":  [
+                     [
+                         {
+                             "param":  "options_page",
+                             "operator":  "==",
+                             "value":  "promotions"
+                         }
+                     ]
+                 ],
+    "menu_order":  0,
+    "position":  "normal",
+    "style":  "default",
+    "label_placement":  "top",
+    "instruction_placement":  "label",
+    "hide_on_screen":  "",
+    "active":  true,
+    "description":  "",
+    "show_in_rest":  0
+}

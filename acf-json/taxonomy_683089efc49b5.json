@@ -1,0 +1,73 @@
+{
+    "key": "taxonomy_683089efc49b5",
+    "title": "Кольори",
+    "menu_order": 0,
+    "active": true,
+    "taxonomy": "color",
+    "object_type": [
+        "product"
+    ],
+    "advanced_configuration": 1,
+    "import_source": "",
+    "import_date": "",
+    "labels": {
+        "name": "Кольори",
+        "singular_name": "Колір",
+        "menu_name": "Кольори",
+        "all_items": "Всі кольори",
+        "edit_item": "Редагувати колір",
+        "view_item": "Переглянути колір",
+        "update_item": "Оновити колір",
+        "add_new_item": "Додати новий колір",
+        "new_item_name": "Нова назва кольору",
+        "search_items": "Пошук кольорів",
+        "popular_items": "Популярні кольори",
+        "separate_items_with_commas": "Розділити кольори через кому",
+        "add_or_remove_items": "Додати або видалити кольори",
+        "choose_from_most_used": "Виберіть із найбільш використовуваних кольорів",
+        "most_used": "Найбільш використовувані",
+        "not_found": "Кольори не знайдено",
+        "no_terms": "Кольори відсутні",
+        "name_field_description": "",
+        "slug_field_description": "",
+        "desc_field_description": "",
+        "items_list_navigation": "Навігація списком кольорів",
+        "items_list": "Список кольорів",
+        "back_to_items": "← Назад до кольорів",
+        "item_link": "Посилання на колір",
+        "item_link_description": "Опис посилання на колір"
+    },
+    "description": "",
+    "capabilities": {
+        "manage_terms": "manage_categories",
+        "edit_terms": "manage_categories",
+        "delete_terms": "manage_categories",
+        "assign_terms": "edit_posts"
+    },
+    "public": 1,
+    "publicly_queryable": 1,
+    "hierarchical": 0,
+    "show_ui": 1,
+    "show_in_menu": 1,
+    "show_in_nav_menus": 0,
+    "show_in_rest": 0,
+    "rest_base": "",
+    "rest_namespace": "wp\/v2",
+    "rest_controller_class": "WP_REST_Terms_Controller",
+    "show_tagcloud": 1,
+    "show_in_quick_edit": 1,
+    "show_admin_column": 0,
+    "rewrite": {
+        "permalink_rewrite": "no_permalink"
+    },
+    "query_var": "post_type_key",
+    "query_var_name": "",
+    "default_term": {
+        "default_term_enabled": "0"
+    },
+    "sort": 0,
+    "meta_box": "disabled",
+    "meta_box_cb": "",
+    "meta_box_sanitize_cb": "",
+    "modified": 1775001822
+}

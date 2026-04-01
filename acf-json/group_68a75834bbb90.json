@@ -1,0 +1,122 @@
+﻿{
+    "key":  "group_68a75834bbb90",
+    "title":  "Р РѕР·РјС–СЂРЅР° СЃС–С‚РєР°",
+    "fields":  [
+                   {
+                       "key":  "field_68a7587a82bc9",
+                       "label":  "Р‘СЂРµРЅРґ",
+                       "name":  "size_table_brand",
+                       "aria-label":  "",
+                       "type":  "taxonomy",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "taxonomy":  "brand",
+                       "add_term":  1,
+                       "save_terms":  1,
+                       "load_terms":  0,
+                       "return_format":  "object",
+                       "field_type":  "checkbox",
+                       "bidirectional":  0,
+                       "multiple":  0,
+                       "allow_null":  0,
+                       "bidirectional_target":  [
+
+                                                ]
+                   },
+                   {
+                       "key":  "field_68a7591082bca",
+                       "label":  "РђСѓРґРёС‚РѕСЂС–СЏ",
+                       "name":  "size_table_auditory",
+                       "aria-label":  "",
+                       "type":  "taxonomy",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "taxonomy":  "audience_category",
+                       "add_term":  1,
+                       "save_terms":  1,
+                       "load_terms":  0,
+                       "return_format":  "object",
+                       "field_type":  "checkbox",
+                       "bidirectional":  0,
+                       "multiple":  0,
+                       "allow_null":  0,
+                       "bidirectional_target":  [
+
+                                                ]
+                   },
+                   {
+                       "key":  "field_68a7594082bcb",
+                       "label":  "РљР°С‚РµРіРѕСЂС–С—",
+                       "name":  "size_table_categories",
+                       "aria-label":  "",
+                       "type":  "taxonomy",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "taxonomy":  "product_category",
+                       "add_term":  1,
+                       "save_terms":  1,
+                       "load_terms":  0,
+                       "return_format":  "object",
+                       "field_type":  "multi_select",
+                       "allow_null":  0,
+                       "bidirectional":  0,
+                       "multiple":  0,
+                       "bidirectional_target":  [
+
+                                                ]
+                   },
+                   {
+                       "key":  "field_68a7583482bc8",
+                       "label":  "Р РѕР·РјС–СЂРЅР° СЃС–С‚РєР°",
+                       "name":  "size_table_field",
+                       "aria-label":  "",
+                       "type":  "table",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "use_header":  0,
+                       "use_caption":  2
+                   }
+               ],
+    "location":  [
+                     [
+                         {
+                             "param":  "post_type",
+                             "operator":  "==",
+                             "value":  "size_table"
+                         }
+                     ]
+                 ],
+    "menu_order":  0,
+    "position":  "normal",
+    "style":  "default",
+    "label_placement":  "top",
+    "instruction_placement":  "label",
+    "hide_on_screen":  "",
+    "active":  true,
+    "description":  "",
+    "show_in_rest":  0
+}

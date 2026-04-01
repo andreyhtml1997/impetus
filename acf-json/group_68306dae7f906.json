@@ -1,0 +1,136 @@
+﻿{
+    "key":  "group_68306dae7f906",
+    "title":  "РљР°С‚РµРіРѕСЂС–С— РґР»СЏ С„С–Р»СЊС‚СЂР°",
+    "fields":  [
+                   {
+                       "key":  "field_68306dad55c15",
+                       "label":  "РљР°С‚РµРіРѕСЂС–С—",
+                       "name":  "product_category_filter",
+                       "aria-label":  "",
+                       "type":  "repeater",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "layout":  "table",
+                       "pagination":  0,
+                       "min":  0,
+                       "max":  0,
+                       "collapsed":  "",
+                       "button_label":  "Р”РѕРґР°С‚Рё РїСѓРЅРєС‚",
+                       "rows_per_page":  20,
+                       "sub_fields":  [
+                                          {
+                                              "key":  "field_68306e6955c17",
+                                              "label":  "",
+                                              "name":  "option",
+                                              "aria-label":  "",
+                                              "type":  "taxonomy",
+                                              "instructions":  "",
+                                              "required":  0,
+                                              "conditional_logic":  0,
+                                              "wrapper":  {
+                                                              "width":  "",
+                                                              "class":  "",
+                                                              "id":  ""
+                                                          },
+                                              "taxonomy":  "product_category",
+                                              "add_term":  0,
+                                              "save_terms":  0,
+                                              "load_terms":  0,
+                                              "return_format":  "object",
+                                              "field_type":  "select",
+                                              "allow_null":  0,
+                                              "bidirectional":  0,
+                                              "multiple":  0,
+                                              "bidirectional_target":  [
+
+                                                                       ],
+                                              "parent_repeater":  "field_68306dad55c15"
+                                          },
+                                          {
+                                              "key":  "field_68306eb655c18",
+                                              "label":  "",
+                                              "name":  "child",
+                                              "aria-label":  "",
+                                              "type":  "repeater",
+                                              "instructions":  "",
+                                              "required":  0,
+                                              "conditional_logic":  0,
+                                              "wrapper":  {
+                                                              "width":  "",
+                                                              "class":  "",
+                                                              "id":  ""
+                                                          },
+                                              "layout":  "table",
+                                              "pagination":  0,
+                                              "min":  0,
+                                              "max":  0,
+                                              "collapsed":  "",
+                                              "button_label":  "Р”РѕРґР°С‚Рё РїС–РґРїСѓРЅРєС‚",
+                                              "rows_per_page":  20,
+                                              "parent_repeater":  "field_68306dad55c15",
+                                              "sub_fields":  [
+                                                                 {
+                                                                     "key":  "field_68306ee555c19",
+                                                                     "label":  "",
+                                                                     "name":  "option",
+                                                                     "aria-label":  "",
+                                                                     "type":  "taxonomy",
+                                                                     "instructions":  "",
+                                                                     "required":  0,
+                                                                     "conditional_logic":  0,
+                                                                     "wrapper":  {
+                                                                                     "width":  "",
+                                                                                     "class":  "",
+                                                                                     "id":  ""
+                                                                                 },
+                                                                     "taxonomy":  "product_category",
+                                                                     "add_term":  0,
+                                                                     "save_terms":  0,
+                                                                     "load_terms":  0,
+                                                                     "return_format":  "object",
+                                                                     "field_type":  "select",
+                                                                     "allow_null":  0,
+                                                                     "bidirectional":  0,
+                                                                     "multiple":  0,
+                                                                     "bidirectional_target":  [
+
+                                                                                              ],
+                                                                     "parent_repeater":  "field_68306eb655c18"
+                                                                 }
+                                                             ]
+                                          }
+                                      ]
+                   }
+               ],
+    "location":  [
+                     [
+                         {
+                             "param":  "taxonomy",
+                             "operator":  "==",
+                             "value":  "audience_category"
+                         }
+                     ],
+                     [
+                         {
+                             "param":  "taxonomy",
+                             "operator":  "==",
+                             "value":  "brand"
+                         }
+                     ]
+                 ],
+    "menu_order":  0,
+    "position":  "normal",
+    "style":  "default",
+    "label_placement":  "top",
+    "instruction_placement":  "label",
+    "hide_on_screen":  "",
+    "active":  true,
+    "description":  "",
+    "show_in_rest":  0
+}

@@ -1,0 +1,153 @@
+﻿{
+    "key":  "group_68244507be07c",
+    "title":  "Р”РѕСЃС‚Р°РІРєР° С– РѕРїР»Р°С‚Р°",
+    "fields":  [
+                   {
+                       "key":  "field_682445077225d",
+                       "label":  "Р‘Р»РѕРєРё",
+                       "name":  "delivery-bloky",
+                       "aria-label":  "",
+                       "type":  "repeater",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "layout":  "block",
+                       "pagination":  0,
+                       "min":  0,
+                       "max":  0,
+                       "collapsed":  "",
+                       "button_label":  "Р”РѕРґР°С‚Рё СЂСЏРґРѕРє",
+                       "rows_per_page":  20,
+                       "sub_fields":  [
+                                          {
+                                              "key":  "field_682445227225e",
+                                              "label":  "Р—Р°РіРѕР»РѕРІРѕРє",
+                                              "name":  "delivery-bloky-zagolovok",
+                                              "aria-label":  "",
+                                              "type":  "text",
+                                              "instructions":  "",
+                                              "required":  0,
+                                              "conditional_logic":  0,
+                                              "wrapper":  {
+                                                              "width":  "",
+                                                              "class":  "",
+                                                              "id":  ""
+                                                          },
+                                              "default_value":  "",
+                                              "maxlength":  "",
+                                              "placeholder":  "",
+                                              "prepend":  "",
+                                              "append":  "",
+                                              "parent_repeater":  "field_682445077225d"
+                                          },
+                                          {
+                                              "key":  "field_682445377225f",
+                                              "label":  "РћРїРёСЃ 1",
+                                              "name":  "delivery-bloky-opys_1",
+                                              "aria-label":  "",
+                                              "type":  "wysiwyg",
+                                              "instructions":  "",
+                                              "required":  0,
+                                              "conditional_logic":  0,
+                                              "wrapper":  {
+                                                              "width":  "",
+                                                              "class":  "",
+                                                              "id":  ""
+                                                          },
+                                              "default_value":  "",
+                                              "tabs":  "all",
+                                              "toolbar":  "full",
+                                              "media_upload":  1,
+                                              "delay":  0,
+                                              "parent_repeater":  "field_682445077225d"
+                                          },
+                                          {
+                                              "key":  "field_6824454972260",
+                                              "label":  "Р’Р°Р¶Р»РёРІР° С–РЅС„РѕСЂРјР°С†С–СЏ",
+                                              "name":  "delivery-bloky-vazhlyva_informacziya",
+                                              "aria-label":  "",
+                                              "type":  "textarea",
+                                              "instructions":  "",
+                                              "required":  0,
+                                              "conditional_logic":  0,
+                                              "wrapper":  {
+                                                              "width":  "",
+                                                              "class":  "",
+                                                              "id":  ""
+                                                          },
+                                              "default_value":  "",
+                                              "maxlength":  "",
+                                              "rows":  "",
+                                              "placeholder":  "",
+                                              "new_lines":  "",
+                                              "parent_repeater":  "field_682445077225d"
+                                          },
+                                          {
+                                              "key":  "field_6824455f72261",
+                                              "label":  "РћРїРёСЃ 2",
+                                              "name":  "delivery-bloky-opys_2",
+                                              "aria-label":  "",
+                                              "type":  "wysiwyg",
+                                              "instructions":  "",
+                                              "required":  0,
+                                              "conditional_logic":  0,
+                                              "wrapper":  {
+                                                              "width":  "",
+                                                              "class":  "",
+                                                              "id":  ""
+                                                          },
+                                              "default_value":  "",
+                                              "tabs":  "all",
+                                              "toolbar":  "full",
+                                              "media_upload":  1,
+                                              "delay":  0,
+                                              "parent_repeater":  "field_682445077225d"
+                                          },
+                                          {
+                                              "key":  "field_6824456872262",
+                                              "label":  "РџРѕРјС–С‚РєРё",
+                                              "name":  "delivery-bloky-pomitky",
+                                              "aria-label":  "",
+                                              "type":  "wysiwyg",
+                                              "instructions":  "",
+                                              "required":  0,
+                                              "conditional_logic":  0,
+                                              "wrapper":  {
+                                                              "width":  "",
+                                                              "class":  "",
+                                                              "id":  ""
+                                                          },
+                                              "default_value":  "",
+                                              "tabs":  "all",
+                                              "toolbar":  "full",
+                                              "media_upload":  1,
+                                              "delay":  0,
+                                              "parent_repeater":  "field_682445077225d"
+                                          }
+                                      ]
+                   }
+               ],
+    "location":  [
+                     [
+                         {
+                             "param":  "page_template",
+                             "operator":  "==",
+                             "value":  "page-payment-and-delivery.php"
+                         }
+                     ]
+                 ],
+    "menu_order":  0,
+    "position":  "normal",
+    "style":  "default",
+    "label_placement":  "top",
+    "instruction_placement":  "label",
+    "hide_on_screen":  "",
+    "active":  true,
+    "description":  "",
+    "show_in_rest":  0
+}

@@ -1,0 +1,317 @@
+﻿{
+    "key":  "group_68231c295bb00",
+    "title":  "РћРїС†С–С—",
+    "fields":  [
+                   {
+                       "key":  "field_682b506894b19",
+                       "label":  "Р—Р°РіР°Р»СЊРЅС–",
+                       "name":  "",
+                       "aria-label":  "",
+                       "type":  "tab",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "placement":  "top",
+                       "endpoint":  0
+                   },
+                   {
+                       "key":  "field_682b51d394b1a",
+                       "label":  "Email РјРµРЅРµРґР¶РµСЂР°",
+                       "name":  "administrator_email",
+                       "aria-label":  "",
+                       "type":  "text",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "maxlength":  "",
+                       "placeholder":  "",
+                       "prepend":  "",
+                       "append":  ""
+                   },
+                   {
+                       "key":  "field_682b51f694b1b",
+                       "label":  "РўРµР»РµС„РѕРЅ РјРµРЅРµРґР¶РµСЂР°",
+                       "name":  "administrator_phone",
+                       "aria-label":  "",
+                       "type":  "text",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "maxlength":  "",
+                       "placeholder":  "",
+                       "prepend":  "",
+                       "append":  ""
+                   },
+                   {
+                       "key":  "field_68231c9ece45b",
+                       "label":  "РђРґСЂРµСЃР°",
+                       "name":  "address",
+                       "aria-label":  "",
+                       "type":  "text",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "maxlength":  "",
+                       "placeholder":  "",
+                       "prepend":  "",
+                       "append":  ""
+                   },
+                   {
+                       "key":  "field_68231cabce45c",
+                       "label":  "Instagram",
+                       "name":  "company_instagram",
+                       "aria-label":  "",
+                       "type":  "url",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "placeholder":  "https://"
+                   },
+                   {
+                       "key":  "field_68231cb4ce45d",
+                       "label":  "Facebook",
+                       "name":  "company_facebook",
+                       "aria-label":  "",
+                       "type":  "url",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "placeholder":  "https://"
+                   },
+                   {
+                       "key":  "field_68231cbdce45e",
+                       "label":  "Telegram",
+                       "name":  "company_telegram",
+                       "aria-label":  "",
+                       "type":  "url",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "placeholder":  "https://"
+                   },
+                   {
+                       "key":  "field_68231cc0ce45f",
+                       "label":  "YouTube",
+                       "name":  "company_youtube",
+                       "aria-label":  "",
+                       "type":  "url",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "placeholder":  "https://"
+                   },
+                   {
+                       "key":  "field_6836ec002bad9",
+                       "label":  "Р†РЅС„Рѕ",
+                       "name":  "",
+                       "aria-label":  "",
+                       "type":  "tab",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "placement":  "top",
+                       "endpoint":  0
+                   },
+                   {
+                       "key":  "field_6836f1c12bada",
+                       "label":  "РЈРјРѕРІРё РґРѕСЃС‚Р°РІРєРё",
+                       "name":  "delivery_conditions",
+                       "aria-label":  "",
+                       "type":  "wysiwyg",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "tabs":  "all",
+                       "toolbar":  "full",
+                       "media_upload":  1,
+                       "delay":  0
+                   },
+                   {
+                       "key":  "field_6836f3e52badb",
+                       "label":  "РЈРјРѕРІРё РѕР±РјС–РЅСѓ С‚Р° РїРѕРІРµСЂРЅРµРЅРЅСЏ",
+                       "name":  "return_conditions",
+                       "aria-label":  "",
+                       "type":  "wysiwyg",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "tabs":  "all",
+                       "toolbar":  "full",
+                       "media_upload":  1,
+                       "delay":  0
+                   },
+                   {
+                       "key":  "field_684dd46184f24",
+                       "label":  "LiqPay",
+                       "name":  "",
+                       "aria-label":  "",
+                       "type":  "tab",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "placement":  "top",
+                       "endpoint":  0
+                   },
+                   {
+                       "key":  "field_684dd48084f25",
+                       "label":  "РџСѓР±Р»С–С‡РЅРёР№ РєР»СЋС‡",
+                       "name":  "liqpay_public_key",
+                       "aria-label":  "",
+                       "type":  "text",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "maxlength":  "",
+                       "placeholder":  "",
+                       "prepend":  "",
+                       "append":  ""
+                   },
+                   {
+                       "key":  "field_684dd4a184f26",
+                       "label":  "РџСЂРёРІР°С‚РЅРёР№ РєР»СЋС‡",
+                       "name":  "liqpay_private_key",
+                       "aria-label":  "",
+                       "type":  "text",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "default_value":  "",
+                       "maxlength":  "",
+                       "placeholder":  "",
+                       "prepend":  "",
+                       "append":  ""
+                   },
+                   {
+                       "key":  "field_68a777f43b129",
+                       "label":  "Р”РµС„РѕР»С‚РЅР° СЂРѕР·РјС–СЂРЅР° С‚Р°Р±Р»РёС†СЏ",
+                       "name":  "",
+                       "aria-label":  "",
+                       "type":  "tab",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "placement":  "top",
+                       "endpoint":  0
+                   },
+                   {
+                       "key":  "field_68a7780b3b12a",
+                       "label":  "Р”РµС„РѕР»С‚РЅР° СЂРѕР·РјС–СЂРЅР° С‚Р°Р±Р»РёС†СЏ",
+                       "name":  "size_table_default",
+                       "aria-label":  "",
+                       "type":  "table",
+                       "instructions":  "",
+                       "required":  0,
+                       "conditional_logic":  0,
+                       "wrapper":  {
+                                       "width":  "",
+                                       "class":  "",
+                                       "id":  ""
+                                   },
+                       "use_header":  0,
+                       "use_caption":  2
+                   }
+               ],
+    "location":  [
+                     [
+                         {
+                             "param":  "options_page",
+                             "operator":  "==",
+                             "value":  "options"
+                         }
+                     ]
+                 ],
+    "menu_order":  0,
+    "position":  "normal",
+    "style":  "default",
+    "label_placement":  "top",
+    "instruction_placement":  "label",
+    "hide_on_screen":  "",
+    "active":  true,
+    "description":  "",
+    "show_in_rest":  0
+}
