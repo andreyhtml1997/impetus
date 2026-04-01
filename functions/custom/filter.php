@@ -1356,7 +1356,11 @@ function impetus_catalog_get_static_filter_context()
 
   // --- [назва розділу] для шаблона ---
   $section = '';
+  $section_mode = 'raw';
+  $section_audience_part = '';
+  $section_category_part = '';
   $show_audience_before_category = true;
+  $aud_slug = $aud_obj && !empty($aud_obj->slug) ? (string) $aud_obj->slug : '';
 
   if ($pc_obj && !empty($pc_obj->term_id)) {
     $show_flag = get_field('show_audience_before_category_on_filter_pages', 'product_category_' . (int) $pc_obj->term_id);
@@ -1370,50 +1374,59 @@ function impetus_catalog_get_static_filter_context()
 
     if (!$show_audience_before_category) {
       $section = (string) $pc_obj->name;
+      $section_mode = 'category_only';
+      $section_category_part = (string) $pc_obj->name;
     } else {
 
-    // audience slug: women|men|children
-    $aud_slug = $aud_obj && !empty($aud_obj->slug) ? (string) $aud_obj->slug : 'women';
-
-    $field = '';
-    if ($aud_slug === 'women') {
-      $field = 'women_seo_h1_ua';
-    } elseif ($aud_slug === 'men') {
-      $field = 'men_seo_h1_ua';
-    } elseif ($aud_slug === 'children') {
-      $field = 'children_seo_h1_ua';
-    } else {
-      $field = 'women_seo_h1_ua';
-    }
-
-    $term_id_prefixed = 'product_category_' . (int) $pc_obj->term_id;
-
-    $custom_section = get_field($field, $term_id_prefixed);
-
-    if ($custom_section) {
-      $section = trim((string) $custom_section);
-    } else {
-      // fallback как раньше (твой текущий подход)
-      $aud_full = get_field('audience_category_fullname', 'audience_category_' . (int) $aud_obj->term_id);
-      $aud_part = $aud_full ? (string) $aud_full : (string) $aud_obj->name;
-
-      // если у тебя сейчас было просто $pc_obj->name — можешь вернуть так же.
-      // Я оставляю более "человеческий" вариант: аудитория + категория.
-      $section = trim($aud_part . ' ' . $pc_obj->name);
-      if (!$section) {
-        $section = (string) $pc_obj->name;
+      // audience slug: women|men|children
+      $field = '';
+      if ($aud_slug === 'women') {
+        $field = 'women_seo_h1_ua';
+      } elseif ($aud_slug === 'men') {
+        $field = 'men_seo_h1_ua';
+      } elseif ($aud_slug === 'children') {
+        $field = 'children_seo_h1_ua';
+      } else {
+        $field = 'women_seo_h1_ua';
       }
-    }
+
+      $term_id_prefixed = 'product_category_' . (int) $pc_obj->term_id;
+
+      $custom_section = get_field($field, $term_id_prefixed);
+
+      if ($custom_section) {
+        $section = trim((string) $custom_section);
+        $section_mode = 'custom';
+      } else {
+        // fallback как раньше (твой текущий подход)
+        $aud_full = get_field('audience_category_fullname', 'audience_category_' . (int) $aud_obj->term_id);
+        $aud_part = $aud_full ? (string) $aud_full : (string) $aud_obj->name;
+
+        // если у тебя сейчас было просто $pc_obj->name — можешь вернуть так же.
+        // Я оставляю более "человеческий" вариант: аудитория + категория.
+        $section_audience_part = (string) $aud_part;
+        $section_category_part = (string) $pc_obj->name;
+        $section_mode = 'audience_plus_category';
+        $section = trim($section_audience_part . ' ' . $section_category_part);
+        if (!$section) {
+          $section = (string) $pc_obj->name;
+          $section_mode = 'category_only';
+          $section_category_part = (string) $pc_obj->name;
+        }
+      }
     }
 
   } else {
     // нет категории — fallback на fullname аудитории
     $aud_full = get_field('audience_category_fullname', 'audience_category_' . (int) $aud_obj->term_id);
     $section = $aud_full ? (string) $aud_full : (string) $aud_obj->name;
+    $section_mode = 'audience_only';
+    $section_audience_part = (string) $section;
   }
 
   $filter_name = '';
   $filter_value = '';
+  $filter_code = '';
   $brand_id = 0;
   $color_ids = array();
   $material_ids = array();
@@ -1423,6 +1436,7 @@ function impetus_catalog_get_static_filter_context()
   if ($brand_obj) {
     $filter_name = 'бренд';
     $filter_value = $brand_obj->name;
+    $filter_code = 'brand';
     $brand_id = (int) $brand_obj->term_id;
   }
 
@@ -1430,6 +1444,7 @@ function impetus_catalog_get_static_filter_context()
     $filter_name = 'колір';
     $filter_value = $color_obj->name;
     $filter_value = mb_strtolower((string) $filter_value, 'UTF-8');
+    $filter_code = 'color';
     $color_ids = array((int) $color_obj->term_id);
   }
 
@@ -1437,6 +1452,7 @@ function impetus_catalog_get_static_filter_context()
     $filter_name = 'матеріал';
     $filter_value = $material_obj->name;
     $filter_value = mb_strtolower((string) $filter_value, 'UTF-8');
+    $filter_code = 'material';
     $material_ids = array((int) $material_obj->term_id);
   }
 
@@ -1478,11 +1494,183 @@ function impetus_catalog_get_static_filter_context()
     'lang' => $lang,
     'seo_key' => impetus_catalog_seo_key(),
     'section' => (string) $section,
+    'section_mode' => (string) $section_mode,
+    'section_audience_part' => (string) $section_audience_part,
+    'section_category_part' => (string) $section_category_part,
+    'audience_slug' => (string) $aud_slug,
+    'show_audience_before_category' => $show_audience_before_category ? 1 : 0,
+    'filter_code' => (string) $filter_code,
     'filter_name' => (string) $filter_name,
     'filter_value' => (string) $filter_value,
     'min_price' => (int) $min_price,
     'in_stock_count' => (int) $in_stock_count,
   );
+}
+
+function impetus_catalog_resolve_lang_code($lang)
+{
+  $lang = mb_strtolower(trim((string) $lang), 'UTF-8');
+
+  if (function_exists('impetus_trp_resolve_lang_code')) {
+    $resolved = impetus_trp_resolve_lang_code($lang);
+    if (!empty($resolved) && is_string($resolved)) {
+      return $resolved;
+    }
+  }
+
+  if ($lang === 'ru') {
+    return 'ru_RU';
+  }
+
+  if ($lang === 'en') {
+    return 'en_GB';
+  }
+
+  return 'uk';
+}
+
+function impetus_catalog_translate_for_lang($value, $lang)
+{
+  $value = (string) $value;
+  if ($value === '') {
+    return '';
+  }
+
+  $lang_code = impetus_catalog_resolve_lang_code($lang);
+
+  if (function_exists('impetus_trp_translate_value')) {
+    $translated = impetus_trp_translate_value($value, $lang_code);
+    if (is_string($translated) && $translated !== '') {
+      return $translated;
+    }
+  }
+
+  if (function_exists('trp_translate')) {
+    $translated = trp_translate($value, $lang_code, false);
+    if (is_string($translated) && $translated !== '') {
+      return $translated;
+    }
+  }
+
+  return $value;
+}
+
+function impetus_catalog_get_audience_label_by_lang($aud_slug, $lang)
+{
+  $aud_slug = mb_strtolower(trim((string) $aud_slug), 'UTF-8');
+  $lang = mb_strtolower(trim((string) $lang), 'UTF-8');
+
+  if ($lang === 'ru') {
+    if ($aud_slug === 'women')
+      return 'Женские товары';
+    if ($aud_slug === 'men')
+      return 'Мужские товары';
+    if ($aud_slug === 'children')
+      return 'Детские товары';
+  }
+
+  if ($lang === 'en') {
+    if ($aud_slug === 'women')
+      return 'Women products';
+    if ($aud_slug === 'men')
+      return 'Men products';
+    if ($aud_slug === 'children')
+      return 'Children products';
+  }
+
+  return '';
+}
+
+function impetus_catalog_build_section_by_lang($ctx, $lang)
+{
+  $lang = mb_strtolower(trim((string) $lang), 'UTF-8');
+
+  $section = isset($ctx['section']) ? (string) $ctx['section'] : '';
+  $mode = isset($ctx['section_mode']) ? (string) $ctx['section_mode'] : 'raw';
+  $aud_slug = isset($ctx['audience_slug']) ? (string) $ctx['audience_slug'] : '';
+  $aud_part = isset($ctx['section_audience_part']) ? (string) $ctx['section_audience_part'] : '';
+  $cat_part = isset($ctx['section_category_part']) ? (string) $ctx['section_category_part'] : '';
+
+  if ($mode === 'category_only' && $cat_part !== '') {
+    $translated_cat = impetus_catalog_translate_for_lang($cat_part, $lang);
+    return $translated_cat !== '' ? $translated_cat : $cat_part;
+  }
+
+  if ($mode === 'audience_only' && $aud_part !== '') {
+    $aud_label = impetus_catalog_get_audience_label_by_lang($aud_slug, $lang);
+    if ($aud_label !== '') {
+      return $aud_label;
+    }
+    $translated_aud = impetus_catalog_translate_for_lang($aud_part, $lang);
+    return $translated_aud !== '' ? $translated_aud : $aud_part;
+  }
+
+  if ($mode === 'audience_plus_category') {
+    $aud_label = impetus_catalog_get_audience_label_by_lang($aud_slug, $lang);
+    if ($aud_label === '' && $aud_part !== '') {
+      $aud_label = impetus_catalog_translate_for_lang($aud_part, $lang);
+      if ($aud_label === '') {
+        $aud_label = $aud_part;
+      }
+    }
+
+    $cat_label = '';
+    if ($cat_part !== '') {
+      $cat_label = impetus_catalog_translate_for_lang($cat_part, $lang);
+      if ($cat_label === '') {
+        $cat_label = $cat_part;
+      }
+    }
+
+    $composed = trim($aud_label . ' ' . $cat_label);
+    if ($composed !== '') {
+      return $composed;
+    }
+  }
+
+  $translated_section = impetus_catalog_translate_for_lang($section, $lang);
+  if ($translated_section !== '') {
+    return $translated_section;
+  }
+
+  return $section;
+}
+
+function impetus_catalog_get_filter_label_by_lang($ctx, $lang)
+{
+  $lang = mb_strtolower(trim((string) $lang), 'UTF-8');
+  $code = isset($ctx['filter_code']) ? (string) $ctx['filter_code'] : '';
+
+  if (!$code) {
+    return isset($ctx['filter_name']) ? (string) $ctx['filter_name'] : '';
+  }
+
+  if ($lang === 'ru') {
+    if ($code === 'brand')
+      return 'бренд';
+    if ($code === 'color')
+      return 'цвет';
+    if ($code === 'material')
+      return 'материал';
+  }
+
+  if ($lang === 'en') {
+    if ($code === 'brand')
+      return 'brand';
+    if ($code === 'color')
+      return 'color';
+    if ($code === 'material')
+      return 'material';
+  }
+
+  if ($code === 'brand')
+    return 'бренд';
+  if ($code === 'color')
+    return 'колір';
+  if ($code === 'material')
+    return 'матеріал';
+
+  return isset($ctx['filter_name']) ? (string) $ctx['filter_name'] : '';
 }
 
 function impetus_catalog_build_meta_ua($ctx)
@@ -1507,6 +1695,90 @@ function impetus_catalog_build_meta_ua($ctx)
     'description' => $desc,
     'h1' => $base,
   );
+}
+
+function impetus_catalog_build_meta_ru($ctx)
+{
+  if (empty($ctx['section']) || $ctx['filter_value'] === '') {
+    return array();
+  }
+
+  $section = impetus_catalog_build_section_by_lang($ctx, 'ru');
+
+  $filter_name = impetus_catalog_get_filter_label_by_lang($ctx, 'ru');
+
+  $filter_value = impetus_catalog_translate_for_lang((string) $ctx['filter_value'], 'ru');
+  if ($filter_value === '') {
+    $filter_value = (string) $ctx['filter_value'];
+  }
+  $filter_value = mb_strtolower((string) $filter_value, 'UTF-8');
+
+  $base = $section . ': ' . $filter_name . ' - ' . $filter_value;
+
+  $title = $base . ' купить по выгодной цене в Украине';
+
+  $desc = $base . ' заказать в ⏩ Underline Store ✔️ ' . $base;
+  if (!empty($ctx['min_price'])) {
+    $desc .= ' по цене от ' . (int) $ctx['min_price'] . ' грн ⭐ Европейское качество ▶️ Доставка по всей Украине.';
+  } else {
+    $desc .= ' ⭐ Европейское качество ▶️ Доставка по всей Украине.';
+  }
+
+  return array(
+    'title' => $title,
+    'description' => $desc,
+    'h1' => $base,
+  );
+}
+
+function impetus_catalog_build_meta_en($ctx)
+{
+  if (empty($ctx['section']) || $ctx['filter_value'] === '') {
+    return array();
+  }
+
+  $section = impetus_catalog_build_section_by_lang($ctx, 'en');
+
+  $filter_name = impetus_catalog_get_filter_label_by_lang($ctx, 'en');
+
+  $filter_value = impetus_catalog_translate_for_lang((string) $ctx['filter_value'], 'en');
+  if ($filter_value === '') {
+    $filter_value = (string) $ctx['filter_value'];
+  }
+  $filter_value = mb_strtolower((string) $filter_value, 'UTF-8');
+
+  $base = $section . ': ' . $filter_name . ' - ' . $filter_value;
+
+  $title = $base . ' buy at a great price in Ukraine';
+
+  $desc = $base . ' order at ⏩ Underline Store ✔️ ' . $base;
+  if (!empty($ctx['min_price'])) {
+    $desc .= ' from ' . (int) $ctx['min_price'] . ' UAH ⭐ European quality ▶️ Delivery across Ukraine.';
+  } else {
+    $desc .= ' ⭐ European quality ▶️ Delivery across Ukraine.';
+  }
+
+  return array(
+    'title' => $title,
+    'description' => $desc,
+    'h1' => $base,
+  );
+}
+
+function impetus_catalog_build_meta_by_lang($ctx, $lang = '')
+{
+  $lang = $lang ? $lang : impetus_catalog_lang();
+  $lang = mb_strtolower(trim((string) $lang), 'UTF-8');
+
+  if ($lang === 'ru') {
+    return impetus_catalog_build_meta_ru($ctx);
+  }
+
+  if ($lang === 'en') {
+    return impetus_catalog_build_meta_en($ctx);
+  }
+
+  return impetus_catalog_build_meta_ua($ctx);
 }
 
 function impetus_catalog_desired_robots_array()

@@ -655,11 +655,7 @@ add_filter('wpseo_title', function ($title) {
   if (!empty($override['title']))
     return $override['title'];
 
-  // По ТЗ гарантированно нужен UA шаблон
-  if ($lang !== 'ua')
-    return $title;
-
-  $meta = impetus_catalog_build_meta_ua($ctx);
+  $meta = function_exists('impetus_catalog_build_meta_by_lang') ? impetus_catalog_build_meta_by_lang($ctx, $lang) : impetus_catalog_build_meta_ua($ctx);
   return !empty($meta['title']) ? $meta['title'] : $title;
 }, 50);
 
@@ -675,10 +671,7 @@ add_filter('wpseo_metadesc', function ($desc) {
   if (!empty($override['description']))
     return $override['description'];
 
-  if ($lang !== 'ua')
-    return $desc;
-
-  $meta = impetus_catalog_build_meta_ua($ctx);
+  $meta = function_exists('impetus_catalog_build_meta_by_lang') ? impetus_catalog_build_meta_by_lang($ctx, $lang) : impetus_catalog_build_meta_ua($ctx);
   return !empty($meta['description']) ? $meta['description'] : $desc;
 }, 50);
 

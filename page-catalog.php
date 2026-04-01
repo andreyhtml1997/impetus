@@ -57,11 +57,9 @@ if (!empty($seo_ctx)) {
 	if (!empty($seo_override['h1'])) {
 		$seo_h1 = $seo_override['h1'];
 	} else {
-		if ($seo_lang === 'ua') {
-			$seo_meta = impetus_catalog_build_meta_ua($seo_ctx);
-			if (!empty($seo_meta['h1']))
-				$seo_h1 = $seo_meta['h1'];
-		}
+		$seo_meta = function_exists('impetus_catalog_build_meta_by_lang') ? impetus_catalog_build_meta_by_lang($seo_ctx, $seo_lang) : impetus_catalog_build_meta_ua($seo_ctx);
+		if (!empty($seo_meta['h1']))
+			$seo_h1 = $seo_meta['h1'];
 	}
 
 	if (!empty($seo_override['text'])) {
