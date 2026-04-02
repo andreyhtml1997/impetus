@@ -11,9 +11,14 @@ if (empty($image_id))
 
 <section class="main-subscribe margin-bottom op">
 	<div class="sub-image">
-		<img class="parallax" src="<?php echo wp_get_attachment_image_url($image_id, 'full'); ?>"
-			srcset="<?php echo wp_get_attachment_image_srcset($image_id, 'full'); ?>"
-			sizes="<?php echo wp_get_attachment_image_sizes($image_id, 'full'); ?>" alt="Image">
+		<?php
+		echo wp_get_attachment_image($image_id, 'full', false, array(
+			'class' => 'parallax',
+			'alt' => 'Image',
+			'loading' => 'lazy',
+			'decoding' => 'async',
+		));
+		?>
 	</div>
 	<div class="sub-info">
 		<div class="container-fluid d-lg-flex align-items-center">
@@ -31,7 +36,7 @@ if (empty($image_id))
 
 			</div> -->
 			<div class="sub-logo op">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/un.svg" alt="Image">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/un.svg" alt="Image" width="769" height="142">
 			</div>
 		</div>
 	</div>

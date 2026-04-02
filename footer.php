@@ -19,7 +19,7 @@ $phone = replace_phone($phone);
 		<div class="footer-top d-lg-flex align-items-center">
 			<div class="footer-left">
 				<a href="<?php echo home_url(); ?>" class="logo">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/logo-white.svg" alt="Logo">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/logo-white.svg" alt="Logo" width="186" height="45">
 				</a>
 			</div>
 
@@ -64,10 +64,11 @@ $phone = replace_phone($phone);
 
 					<div class="pays d-flex align-items-center ">
 						<div class="item">
-							<img alt="Image" src="<?php echo get_template_directory_uri(); ?>/images/visa.svg">
+							<img alt="Image" src="<?php echo get_template_directory_uri(); ?>/images/visa.svg" width="63" height="20">
 						</div>
 						<div class="item">
-							<img alt="Image" src="<?php echo get_template_directory_uri(); ?>/images/mastercard.svg">
+							<img alt="Image" src="<?php echo get_template_directory_uri(); ?>/images/mastercard.svg" width="33"
+								height="20">
 						</div>
 						<div class="item">
 							<img alt="Image" src="<?php echo get_template_directory_uri(); ?>/images/liq.svg">
@@ -167,7 +168,7 @@ $phone = replace_phone($phone);
 				<div class="dev d-inline-flex align-items-center">
 					<span class="value">Develop with love</span>
 					<a href="https://esfirum.com" target="_blank">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/esfirum.svg" alt="Image">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/esfirum.svg" alt="Image" width="112" height="20">
 					</a>
 				</div>
 			</div>

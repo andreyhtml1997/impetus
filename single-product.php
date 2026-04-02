@@ -209,9 +209,13 @@ get_header();
 						<?php foreach ($product_obj->product_gallery as $image_id): ?>
 							<div class="slide">
 								<a href="<?php echo wp_get_attachment_image_url($image_id, 'full'); ?>" class="item" data-fancybox="gall">
-									<img src="<?php echo wp_get_attachment_image_url($image_id, 'full'); ?>"
-										srcset="<?php echo wp_get_attachment_image_srcset($image_id, 'full'); ?>"
-										sizes="<?php echo wp_get_attachment_image_sizes($image_id, 'full'); ?>" alt="Image">
+									<?php
+									echo wp_get_attachment_image($image_id, 'full', false, array(
+										'alt' => 'Image',
+										'loading' => 'lazy',
+										'decoding' => 'async',
+									));
+									?>
 								</a>
 							</div>
 						<?php endforeach; ?>

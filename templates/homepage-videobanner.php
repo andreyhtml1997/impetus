@@ -3,6 +3,16 @@
 $main_hero_video_url = get_field('main-hero-video');
 $main_hero_zagolovok = get_field('main-hero-zagolovok');
 $main_hero_pidzagolovok = get_field('main-hero-pidzagolovok');
+$main_hero_poster = get_field('main-hero-poster');
+$main_hero_poster_url = '';
+
+if (!empty($main_hero_poster)) {
+	if (is_numeric($main_hero_poster)) {
+		$main_hero_poster_url = wp_get_attachment_image_url((int) $main_hero_poster, 'full');
+	} else {
+		$main_hero_poster_url = esc_url_raw((string) $main_hero_poster);
+	}
+}
 
 if (empty($main_hero_video_url))
 	return;
@@ -16,7 +26,8 @@ $audience_category_objs = get_audience_categories(array(
 
 <section class="main-hero">
 	<div class="hero-video">
-		<video autoplay loop muted playsinline poster="#">
+		<video autoplay loop muted playsinline preload="metadata" <?php if (!empty($main_hero_poster_url))
+			echo 'poster="' . esc_url($main_hero_poster_url) . '"'; ?>>
 			<source src="<?php echo esc_url($main_hero_video_url); ?>">
 		</video>
 	</div>

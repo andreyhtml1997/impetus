@@ -133,10 +133,9 @@ if (!$active_size_id || empty($avail_map[$active_size_id])) {
 				if (!empty($args['fetchpriority_high'])) {
 					$thumb_attrs['fetchpriority'] = 'high';
 				}
+				$thumb_attrs['data-no-fetchpriority'] = '1';
 
-				echo get_the_post_thumbnail($post->ID, 'full', [
-					'data-no-fetchpriority' => '1',
-				]);
+				echo get_the_post_thumbnail($post->ID, 'full', $thumb_attrs);
 				?>
 			</a>
 
@@ -146,9 +145,13 @@ if (!$active_size_id || empty($avail_map[$active_size_id])) {
 					<?php foreach ($images as $image_id): ?>
 						<div class="slide-in">
 							<a href="<?php the_permalink(); ?>" class="m-item">
-								<img src="<?php echo wp_get_attachment_image_url($image_id, 'full'); ?>"
-									srcset="<?php echo wp_get_attachment_image_srcset($image_id, 'full'); ?>"
-									sizes="<?php echo wp_get_attachment_image_sizes($image_id, 'full'); ?>" alt="Image">
+								<?php
+								echo wp_get_attachment_image($image_id, 'full', false, array(
+									'alt' => 'Image',
+									'loading' => 'lazy',
+									'decoding' => 'async',
+								));
+								?>
 							</a>
 						</div>
 					<?php endforeach; ?>
@@ -163,9 +166,13 @@ if (!$active_size_id || empty($avail_map[$active_size_id])) {
 					<?php foreach ($mobile_images as $image_id): ?>
 						<div class="slide-in">
 							<a href="<?php the_permalink(); ?>" class="m-item">
-								<img src="<?php echo wp_get_attachment_image_url($image_id, 'full'); ?>"
-									srcset="<?php echo wp_get_attachment_image_srcset($image_id, 'full'); ?>"
-									sizes="<?php echo wp_get_attachment_image_sizes($image_id, 'full'); ?>" alt="Image">
+								<?php
+								echo wp_get_attachment_image($image_id, 'full', false, array(
+									'alt' => 'Image',
+									'loading' => 'lazy',
+									'decoding' => 'async',
+								));
+								?>
 							</a>
 						</div>
 					<?php endforeach; ?>

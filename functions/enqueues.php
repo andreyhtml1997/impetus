@@ -17,27 +17,43 @@ function mw_asset_ver($rel_path)
 	return (string) filemtime($abs);
 }
 
+function mw_is_catalog_context()
+{
+	if (is_admin()) {
+		return false;
+	}
+
+	if (defined('CATALOG_PAGE_ID') && is_page(CATALOG_PAGE_ID)) {
+		return true;
+	}
+
+	if (is_tax('product_category')) {
+		return true;
+	}
+
+	$uri = isset($_SERVER['REQUEST_URI']) ? (string) $_SERVER['REQUEST_URI'] : '';
+	$path = $uri ? (string) parse_url($uri, PHP_URL_PATH) : '';
+	$path = $path ? '/' . ltrim($path, '/') : '';
+
+	return $path && strpos($path, 'catalog') !== false;
+}
+
 /* ------------------Enqueues----------------------- */
 function scripts_and_styles()
 {
 
-	$is_catalog = false;
-
-	if (!is_admin()) {
-		$uri = isset($_SERVER['REQUEST_URI']) ? (string) $_SERVER['REQUEST_URI'] : '';
-		$path = $uri ? (string) parse_url($uri, PHP_URL_PATH) : '';
-		$path = $path ? '/' . ltrim($path, '/') : '';
-
-		// если в URL есть "catalog" (любой язык, любые вложенности)
-		if ($path && strpos($path, 'catalog') !== false) {
-			$is_catalog = true;
-		}
-	}
+	$is_catalog = mw_is_catalog_context();
 	// ---------------- Styles ----------------
 
 	// Главный style.css темы (обычно критичный для первого экрана)
 	$theme_style_ver = mw_asset_ver('/style.css');
 	wp_enqueue_style('style-css', get_stylesheet_uri(), [], $theme_style_ver);
+	wp_enqueue_style(
+		'theme-google-fonts',
+		'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap',
+		[],
+		null
+	);
 
 	// Локальные стили с корректными версиями (для кеша)
 	wp_enqueue_style(
@@ -61,14 +77,14 @@ function scripts_and_styles()
 			mw_asset_ver('/assets/css/fancybox.css')
 		);
 	}
-	// if (!$is_catalog) {
-	wp_enqueue_style(
-		'ui-css',
-		get_template_directory_uri() . '/assets/css/jquery-ui.css',
-		[],
-		mw_asset_ver('/assets/css/jquery-ui.css')
-	);
-	// }
+	if ($is_catalog) {
+		wp_enqueue_style(
+			'ui-css',
+			get_template_directory_uri() . '/assets/css/jquery-ui.css',
+			[],
+			mw_asset_ver('/assets/css/jquery-ui.css')
+		);
+	}
 
 	// Основной CSS сайта (часто критичен)
 	wp_enqueue_style(
@@ -123,15 +139,15 @@ function scripts_and_styles()
 			true
 		);
 	}
-	// if (!$is_catalog) {
-	wp_enqueue_script(
-		'ui-scripts',
-		get_template_directory_uri() . '/assets/js/jquery-ui.min.js',
-		['jquery'],
-		mw_asset_ver('/assets/js/jquery-ui.min.js'),
-		true
-	);
-	// }
+	if ($is_catalog) {
+		wp_enqueue_script(
+			'ui-scripts',
+			get_template_directory_uri() . '/assets/js/jquery-ui.min.js',
+			['jquery'],
+			mw_asset_ver('/assets/js/jquery-ui.min.js'),
+			true
+		);
+	}
 	if (!$is_catalog) {
 		wp_enqueue_script(
 			'touch-scripts',
@@ -206,13 +222,17 @@ add_filter('wp_resource_hints', function ($hints, $relation_type) {
 		return $hints;
 	}
 
-	$hints[] = 'https://unpkg.com';
-	$hints[] = 'https://keepincrm.chat';
-	$hints[] = 'https://static.keepincrm.com';
-	$hints[] = 'https://connect.facebook.net';
-	$hints[] = 'https://www.googletagmanager.com';
+	$extra_hints = [
+		'https://fonts.googleapis.com',
+		'https://fonts.gstatic.com',
+		'https://unpkg.com',
+		'https://keepincrm.chat',
+		'https://static.keepincrm.com',
+		'https://connect.facebook.net',
+		'https://www.googletagmanager.com',
+	];
 
-	return $hints;
+	return array_values(array_unique(array_merge($hints, $extra_hints)));
 
 }, 10, 2);
 
@@ -228,12 +248,13 @@ add_filter('style_loader_tag', function ($html, $handle, $href, $media) {
 	}
 
 	// Эти оставляем блокирующими (чтобы не было мигания без стилей)
-	$blocking = [
-		// 'style-css',
-		'main-css',
+	$non_blocking_preload_handles = [
+		'media-css',
+		'fancy-css',
+		'ui-css',
 	];
 
-	if (in_array($handle, $blocking, true)) {
+	if (!in_array($handle, $non_blocking_preload_handles, true)) {
 		return $html;
 	}
 
@@ -245,8 +266,6 @@ add_filter('style_loader_tag', function ($html, $handle, $href, $media) {
 	return $out;
 
 }, 10, 4);
-
-
 
 add_action('wp_enqueue_scripts', function () {
 
@@ -280,17 +299,6 @@ add_action('wp_default_scripts', function ($scripts) {
 
 
 
-
-add_action('wp_head', function () {
-
-	if (is_admin()) {
-		return;
-	}
-
-	echo "<link rel='preconnect' href='https://fonts.googleapis.com'>\n";
-	echo "<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>\n";
-
-}, 1);
 
 add_filter('style_loader_src', function ($src, $handle) {
 

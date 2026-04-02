@@ -41,9 +41,6 @@ $wishlist = get_wishlist();
 	<!-- End Google Tag Manager -->
 
 	<?php wp_head(); ?>
-
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T38024H9TP"></script>
@@ -67,7 +64,8 @@ $wishlist = get_wishlist();
 			<div class="header-container w-100">
 				<div class="container-fluid d-flex align-items-center">
 					<a href="<?php echo home_url(); ?>" class="logo">
-						<img class="d-none d-md-block" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="Logo">
+						<img class="d-none d-md-block" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="Logo"
+							width="186" height="45">
 						<img class="d-block d-md-none" src="<?php echo get_template_directory_uri(); ?>/images/logo-mobile.svg"
 							alt="Logo" width="35" height="32">
 					</a>
@@ -181,10 +179,13 @@ $wishlist = get_wishlist();
 															<?php if (!empty($audience_category_image_id)): ?>
 																<div class="drop-left">
 																	<div class="drop-image">
-																		<img src="<?php echo wp_get_attachment_image_url($audience_category_image_id, 'full'); ?>"
-																			srcset="<?php echo wp_get_attachment_image_srcset($audience_category_image_id, 'full'); ?>"
-																			sizes="<?php echo wp_get_attachment_image_sizes($audience_category_image_id, 'full'); ?>"
-																			alt="Image">
+																		<?php
+																		echo wp_get_attachment_image($audience_category_image_id, 'full', false, array(
+																			'alt' => 'Image',
+																			'loading' => 'lazy',
+																			'decoding' => 'async',
+																		));
+																		?>
 																	</div>
 
 																	<?php if (!empty($company_facebook) || !empty($company_instagram) || !empty($company_telegram) || !empty($company_youtube)): ?>

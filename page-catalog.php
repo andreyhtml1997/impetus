@@ -183,9 +183,13 @@ $filter_min_max_price = get_filter_available_params($audience_category_obj->term
 
 					<?php if (!empty($brand_logo)): ?>
 						<div class="detail-logo">
-							<img src="<?php echo wp_get_attachment_image_url($brand_logo, 'full'); ?>"
-								srcset="<?php echo wp_get_attachment_image_srcset($brand_logo, 'full'); ?>"
-								sizes="<?php echo wp_get_attachment_image_sizes($brand_logo, 'full'); ?>" alt="Image">
+							<?php
+							echo wp_get_attachment_image($brand_logo, 'full', false, array(
+								'alt' => 'Image',
+								'loading' => 'lazy',
+								'decoding' => 'async',
+							));
+							?>
 						</div>
 					<?php endif; ?>
 
@@ -198,9 +202,13 @@ $filter_min_max_price = get_filter_available_params($audience_category_obj->term
 							<?php foreach ($brand_gallery as $brand_gallery_image_id): ?>
 								<div class="col-4">
 									<div class="item">
-										<img src="<?php echo wp_get_attachment_image_url($brand_gallery_image_id, 'full'); ?>"
-											srcset="<?php echo wp_get_attachment_image_srcset($brand_gallery_image_id, 'full'); ?>"
-											sizes="<?php echo wp_get_attachment_image_sizes($brand_gallery_image_id, 'full'); ?>" alt="Image">
+										<?php
+										echo wp_get_attachment_image($brand_gallery_image_id, 'full', false, array(
+											'alt' => 'Image',
+											'loading' => 'lazy',
+											'decoding' => 'async',
+										));
+										?>
 									</div>
 								</div>
 							<?php endforeach; ?>

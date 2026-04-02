@@ -28,7 +28,13 @@ if ( empty( $product_category_objs ) )
 						<div class="item-image">
 							
 							<?php if ( ! empty( $product_category_image_id ) ) : ?>
-							<img src="<?php echo wp_get_attachment_image_url( $product_category_image_id, 'full' ); ?>" srcset="<?php echo wp_get_attachment_image_srcset( $product_category_image_id, 'full' ); ?>" sizes="<?php echo wp_get_attachment_image_sizes( $product_category_image_id, 'full' ); ?>" alt="Image">
+							<?php
+							echo wp_get_attachment_image( $product_category_image_id, 'full', false, array(
+								'alt' => 'Image',
+								'loading' => 'lazy',
+								'decoding' => 'async',
+							) );
+							?>
 							<?php endif; ?>
 
 						</div>

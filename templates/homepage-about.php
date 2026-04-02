@@ -16,7 +16,14 @@ if ( empty( $description ) )
 			<?php if ( ! empty( $big_image_id ) ) : ?>
 			<div class="image-left op">
 				<div class="image-container">
-					<img class="parallax" src="<?php echo wp_get_attachment_image_url( $big_image_id, 'full' ); ?>" srcset="<?php echo wp_get_attachment_image_srcset( $big_image_id, 'full' ); ?>" sizes="<?php echo wp_get_attachment_image_sizes( $big_image_id, 'full' ); ?>" alt="Image">
+					<?php
+					echo wp_get_attachment_image( $big_image_id, 'full', false, array(
+						'class' => 'parallax',
+						'alt' => 'Image',
+						'loading' => 'lazy',
+						'decoding' => 'async',
+					) );
+					?>
 				</div>
 			</div>
 			<?php endif; ?>
@@ -33,7 +40,14 @@ if ( empty( $description ) )
 
 				<?php if ( ! empty( $small_image_id ) ) : ?>
 				<div class="image-right op">
-					<img class="parallax" src="<?php echo wp_get_attachment_image_url( $small_image_id, 'full' ); ?>" srcset="<?php echo wp_get_attachment_image_srcset( $small_image_id, 'full' ); ?>" sizes="<?php echo wp_get_attachment_image_sizes( $small_image_id, 'full' ); ?>" alt="Image">
+					<?php
+					echo wp_get_attachment_image( $small_image_id, 'full', false, array(
+						'class' => 'parallax',
+						'alt' => 'Image',
+						'loading' => 'lazy',
+						'decoding' => 'async',
+					) );
+					?>
 				</div>
 				<?php endif; ?>
 
